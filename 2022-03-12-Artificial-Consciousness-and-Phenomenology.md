@@ -4,6 +4,7 @@ author: Reed Nelson
 title: "Artificial Consciousness and Phenomenology"
 ---
 
+
 ### Introduction
 
 Perceptions of what it takes for a computer to have consciousness seem to vary radically from person to person. If you have lower standards, perhaps you think it possible that the internet, or even just individual computers already have some level of consciousness. At the other extreme, you could think real artificial consciousness is centuries off or even impossible (and you’d be in the company of [some experts](https://www.researchgate.net/publication/280838978_Future_Progress_in_Artificial_Intelligence_A_Survey_of_Expert_Opinion)!). I won’t bother describing where I think the average person falls, or where you fall, but I will say I probably think your standards are too low, and that’s why I decided to write about this topic. My goal in this post is to make you consider aspects consciousness you might not have before, and perhaps give you cause to update your intuition on this matter.
@@ -14,30 +15,33 @@ Notice that our definition of AGI says absolutely nothing about consciousness! I
 
 At this point you might be asking yourself “but Reed, it can do things! What does it matter whether it has consciousness?”. I leave this question as an exercise to the reader.[^1]
 
+
 ### Phenoumenomonie?
 
 Now for the fun part: unusual and out-of-fashion philosophy. The Phenomenological tradition was started by Edmund Husserl and was present in the works of a number of notable European philosophers of the early-mid 20th century. Phenomenology is essentially (if you can believe it) the study of phenomena. Phenomenology puts first the subjective first-personal experience, the what-it’s-like-ness of a phenomenon, and considers second the aspect of a phenomenon that one thinks about, that one can describe with words and conventionally analyze. I think a phenomenological approach to the question of what it takes to create consciousness is critical, because it gets at the heart of the difference between our minds and machines. 
 
 For the sake of precision, I would like to introduce just one more term: Dasein[^2]. To avoid bogging us down, consider Dasein to be a generic term for a being with human-like consciousness. We want to avoid the word human to underscore that we're not talking about properties that are necessarily exclusive to humans. E.g. if we contacted an alien society, and they did math and had complex relationships and whatever else distinguishes humans from other Earthly animals in the relevant respects, we'd say members of this alien race are Dasein.  
 
-So then, what exactly are the differences, phenomenologically speaking, between dasein, and the likes of chairs and computers? 
+So then, what exactly are the differences, phenomenologically speaking, between dasein, and the likes of chairs and computers? To Heidegger, these were some of the biggest things:
 
 1. Dasein’s Being is Being-in-the-world: It is in the world, not merely in the passive, spatial sense of the word ‘in’, but in an active sense exclusive to Dasein. That is, it dwells in, it engages in the world.
-2. For Dasein, entities are fundamentally ready-to-hand: The pre-reflective experience of things in the world for Dasein is not as objects with explicit properties, but as equipment, entities to be understood through their use. E.g., when in a room, we don't encounter the room in a geometric sense, as something between four walls, but rather as equipment for residing. This is a further implication of the Dasein’s inherent concern with its Being: because Dasein lives in the world, and interacts with the things in it, those things carry meaning for it, insofar as they relate in some way to its undertakings. 
+2. For Dasein, entities are fundamentally ready-to-hand[^3]: The pre-reflective experience of things in the world for Dasein is not as objects with explicit properties, but as equipment, entities to be understood through their use. E.g., when in a room, we don't encounter the room in a geometric sense, as something between four walls, but rather as equipment for residing. This is a further implication of the Dasein’s inherent concern with its Being: because Dasein lives in the world, and interacts with the things in it, those things carry meaning for it, insofar as they relate in some way to its undertakings. 
 3. Dasein has mineness: Unlike ordinary objects, Dasein cares about what it is, what its life is amounting to. Emerging from this concern with its own being, Dasein has a first-person perspective. As such, one uses a personal pronoun when addressing it, i.e. ‘I am’, ‘you are’.
 4. Dasein *has* a way of Being: It has personality, social roles, a lifestyle. In its understanding that it is one way rather than another, it understands what it is to be. 
-5. Dasein *is* its way of Being: “The ‘essence’ of dasein lies in its existence”[^3]. Unlike ordinary entities such as chairs or baseballs, its Being is what it chooses to make of its properties. The difference is that a chair’s Being is totally static, it cannot be any other way. It has no mineness, and no concern with its own (or any) Being. On the other hand, Dasein’s Being is dynamic. Through its own volition, it determines how it acts, and thus, how it is.
+5. Dasein *is* its way of Being: “The ‘essence’ of dasein lies in its existence”[^4]. Unlike ordinary entities such as chairs or baseballs, its Being is what it chooses to make of its properties. The difference is that a chair’s Being is totally static, it cannot be any other way. It has no mineness, and no concern with its own (or any) Being. On the other hand, Dasein’s Being is dynamic. Through its own volition, it determines how it acts, and thus, how it is.
 
-[Probably want to summarize or something]
 
-### Conclusion
-[Here]
+### The Upshot
+You need not completely understand these or comletely agree that they're all necessary for what we want to call a humanlike level of consciousness. But if you get the gist and you can convince yourself that some of these are capturing important differences between the conscious and the not, then the thought that the internet or even some superhuman chat bot could have consciousness should sound completely absurd. 
+
+An obvious next step would be to theorize about how we actually go from plain AGI to Dasein AGI, but I feel we're running long, and that could be a blog post all its own. 
+
 
 ### Additional Reading
 
 #### Alan Turing - [Computing Machinery and Intelligence](https://academic.oup.com/mind/article/LIX/236/433/986238) (1950) 
 
-This is one of Turing’s most famous papers. This is where the [Turing Test](https://en.wikipedia.org/wiki/Turing_test) is debuted, and its among the earliest works in this domain. And it’s remarkably easy to read for its age! 
+This is one of Turing’s most famous papers. This is where the [Turing Test](https://en.wikipedia.org/wiki/Turing_test) debuted, and its among the earliest works in this domain. And it’s remarkably easy to read for its age! 
 
 #### John Searle - [Minds, Brains, and Programs](https://www.law.upenn.edu/live/files/3413-searle-j-minds-brains-and-programs-1980pdf) (1980) 
 
@@ -56,5 +60,6 @@ Fjelland’s goal in this paper is to show that Dreyfus’s argument still holds
 >“We are bodily and social beings, living in a material and social world. To understand another person is not to look into the chemistry of that person’s brain, not even into that person’s soul, but is rather to be in that person’s ‘shoes’. It is to understand that person’s lifeworld.” 
 
 [^1]: I've always wanted to say this.
-[^2]: Pronounced däzīn. This is a German word which just means "being there". Our usage comes from Martin Heidegger (phenomenologist and student of Husserl). Dasein is a very important and nuanced concept for Heidegger
-[^3]: Heidegger, [Being and Time](http://www.naturalthinker.net/trl/texts/Heidegger,Martin/Heidegger,%20Martin%20-%20Being%20and%20Time/Being%20and%20Time.pdf).
+[^2]: Pronounced däzīn. This is a German word which just means "being there". Our usage comes from Martin Heidegger (phenomenologist and student of Husserl). Dasein is a very important and nuanced concept for Heidegger, we're being a little fast and loose.
+[^3]: "Zuhandenheit", in German. Contrast this with a *present-at-hand* ("vorhandenheit") approach, perception of the world as objects with articulable properties.  
+[^4]: Heidegger, [Being and Time](http://www.naturalthinker.net/trl/texts/Heidegger,Martin/Heidegger,%20Martin%20-%20Being%20and%20Time/Being%20and%20Time.pdf).

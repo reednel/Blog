@@ -5,9 +5,7 @@ title: "Artificial Consciousness and Phenomenology"
 ---
 
 
-### Introduction
-
-Perceptions of what it takes for a computer to have consciousness seem to vary radically from person to person. If you have very low standards, perhaps you think it possible that the internet, or even just individual computers already have some level of consciousness. At the other extreme, you could think real artificial consciousness is centuries off or even impossible (and you’d be in the company of [some experts](https://www.researchgate.net/publication/280838978_Future_Progress_in_Artificial_Intelligence_A_Survey_of_Expert_Opinion)!). I decided to write about this topic because odds are, I think your standards are too low. My goal in this post is to make you consider aspects consciousness you might not have before, and perhaps give you cause to update your intuition.
+Perceptions of what it takes for a computer to have consciousness seem to vary radically from person to person. If you have very low standards, perhaps you think it possible that the internet, or even just individual computers already have some level of consciousness. At the other extreme, you could think real artificial consciousness is centuries off or even impossible[^0]. I decided to write about this topic because odds are, I think your standards are too low. My goal in this post is to make you consider aspects consciousness you might not have before, and perhaps give you cause to update your intuition.
 
 To get us on the same page and in the right headspace, I’ll define a few terms before moving forward. Artificial narrow intelligences (ANIs) are systems capable of doing a narrow range of tasks, usually as well or better than a human could. This describes all present-day AIs (think Deep Blue, AlphaZero, GPT-3, Alexa…).  Artificial General Intelligence (AGI) refers to a system that can do most everything an average human can, at least in feats of intellect. Consciousness can be a tricky thing to talk and think about. There are at least a dozen named theories as to what broadly is going on in the mind/brain to create consciousness. We’ll define it as Google does: “the fact of awareness by the mind of itself and the world”.  
 
@@ -36,6 +34,7 @@ You need not completely understand these or comletely agree that they're all nec
 
 An obvious next step would be to theorize about how we actually go from plain AGI to Dasein AGI, but I feel we're running long, and that could be a blog post all its own. 
 
+---
 
 ### Additional Reading
 
@@ -59,6 +58,9 @@ Fjelland’s goal in this paper is to show that Dreyfus’s argument still holds
 
 >“We are bodily and social beings, living in a material and social world. To understand another person is not to look into the chemistry of that person’s brain, not even into that person’s soul, but is rather to be in that person’s ‘shoes’. It is to understand that person’s lifeworld.” 
 
+---
+
+[^0]: And you’d be in the company of [some experts](https://www.researchgate.net/publication/280838978_Future_Progress_in_Artificial_Intelligence_A_Survey_of_Expert_Opinion)!
 [^1]: I've always wanted to say this.
 [^2]: Pronounced däzīn. This is a German word which just means "being there". Our usage comes from Martin Heidegger (phenomenologist and student of Husserl). Dasein is a very important and nuanced concept for Heidegger, we're being a little fast and loose.
 [^3]: "Zuhandenheit", in German. Contrast this with a *present-at-hand* ("vorhandenheit") approach, perception of the world as objects with articulable properties.  

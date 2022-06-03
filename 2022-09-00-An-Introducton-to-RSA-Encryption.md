@@ -13,11 +13,11 @@ RSA is a public-key encryption algorithm developed at MIT in the 70's[^2] by res
 
 #### A Bit About Modular Arithmetic
 
-The modulus operator gives the remainder of an integer division. For example, $5 \text{ mod } 3 = 2$. Equivalently, we say $5 \equiv 2 (\text{mod } 3)$. $\mathbb{Z}$ denotes the set of integers, and $\mathbb{Z}_n$ denotes the set of integers modulo $n$, i.e. $\{0, 1, 2, ..., n-1\}$.
+The modulus operator gives the remainder of an integer division. For example, $5 \text{ mod } 3 = 2$. Equivalently, we say $5 \equiv 2 (\text{mod } 3)$, "five is congruent to two, mod three". $\mathbb{Z}$ denotes the set of integers, and $\mathbb{Z}_n$ denotes the set of integers modulo $n$, i.e. $\{0, 1, 2, ..., n-1\}$.
 
 ### Traditional Ciphersystems
 
-A ciphersystem $(P, C, K, e, d)$ is defind as follows:
+A ciphersystem $(P, C, K, e, d)$ is defined with the following components:
 $P = $ a set of plaintexts
 $C = $ a set of ciphertexts
 $K = $ a set of keys
@@ -49,20 +49,21 @@ I've already mentioned that RSA is widely used today, but in particular many RSA
 For a sense of scale, the number of atoms in the universe has about $80$ digits. So the numbers we're working with here are truly massive. This may raise a couple concerns for you.
 
 First, isn't it difficult to find prime numbers that large to use for $p$ and $q$?
-Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are apporximately $\frac{n}{\ln(n)}$ primes in the first $n$ naturals.
+Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are apporximately $\frac{n}{\ln(n)}$ primes in the first $n$ naturals. So in pratice, it's reasonable to iteratively take numbers in some ballpark and do a [primality test](https://en.wikipedia.org/wiki/Primality_test). This can be done much faster than finding the prime factors in general. Naively all you'd have to do is check if any prime between $2$ and $\sqrt{n}$ divides $n$.
 
 Second, isn't it difficult to reduce such huge exponents to encrypt and decrypt messages?
-Not really! Since we're doing modular exponentiation, we can be super efficient. Let's do an example. Say we want to encrypt the letter X ($23^{rd}$ letter) with the key $e = 25$ in $\mathbb{Z}_{26}$. We want to know $23^{25} (\text{mod } 26)$. Computing directly gives $23^{25} = 11,045,767,571,919,545,466,173,812,409,689,943$. But that took a ton of sub-operations, and we have to do a ton more to find this value mod $26$. By leveraging the fact we're working in $\mathbb{Z}_{26}$, we can reduce this to order $O(\log(n))$ operations. $23^{25} = (23^{12})^2 \cdot 23 = ((23^6)^2)^2 \cdot 23 = (((23^3)^2)^2)^2 \cdot 23 = (((23 \cdot 23^2)^2)^2)^2 \cdot 23$. $23^2 (\text{mod } 26) = 529 (\text{mod } 26) = 9$. $23 * 9 (\text{mod } 26) = 207 (\text{mod } 26) = 25$. Now we have $(((25)^2)^2)^2$. Almost there! $25^2 = 625 = 1$, and of course $1$ to any power is $1$. So $23^{25} = 1 (\text{mod } 26)$.
-By
+Not really! Since we're doing modular exponentiation, we can be super efficient. Let's do an example. Say we want to encrypt the letter X ($23^{rd}$ letter) with the key $e = 25$ in $\mathbb{Z}_{26}$. We want to know $23^{25} (\text{mod } 26)$. Computing directly gives $23^{25} = 11,045,767,571,919,545,466,173,812,409,689,943$. But that took a ton of sub-operations, and we have to do a ton more to find this value mod $26$. By leveraging the fact we're working in $\mathbb{Z}_{26}$, we can reduce this to order $O(\log(n))$ operations. $23^{25} = (23^{12})^2 \cdot 23 = ((23^6)^2)^2 \cdot 23 = (((23^3)^2)^2)^2 \cdot 23 = (((23 \cdot 23^2)^2)^2)^2 \cdot 23$. $23^2 (\text{mod } 26) = 529 (\text{mod } 26) \equiv 9$. $23 * 9 (\text{mod } 26) = 207 (\text{mod } 26) \equiv 25$. Now we have $(((25)^2)^2)^2$. Almost there! $25^2 = 625 \equiv 1$, and of course $1$ to any power is $1$. So $23^{25} \equiv 1 (\text{mod } 26)$.
+By finding modular equivalences in intermediate steps, we're able to keep the size of our multiplications in a reasonable range.
 
-#### Proof that $\forall x \in \mathbb{Z}_{pq},\, x^{ed} = x$
+#### Proof that $\forall x \in \mathbb{Z}_{pq},\, x^{ed} \equiv x$
 
 Fermat's Little Theorem[^0]: if $p$ is prime, then $x^p \equiv x (\text{mod } p)$.
-By construction, $ed = 1 \text{ mod } (p-1)(q-1)$, so $(ed-1)$ is a multiple of $(p-1)(q-1)$. That is, $\exists k \in \mathbb{Z}:\, ed-1 = k(p-1)$.
+By construction, $ed \equiv 1 \text{ mod } (p-1)(q-1)$, so $(ed-1)$ is a multiple of $(p-1)(q-1)$.
+That is, $\exists k \in \mathbb{Z}:\, ed-1 = k(p-1)$.
 Then $(x^e)^d = x^{ed} = x \cdot x^{ed-1} = x \cdot x^{k(p-1)} = x \cdot (x^p)^k \cdot x^{-k}$.
-By Fermat's Little Theorem, $x^p \equiv x (\text{mod } p)$, so $x \cdot (x^p)^k \cdot x^{-k} = x \cdot x^k \cdot x^{-k} = x (\text{mod } p)$.
-By symmetry, $(x^e)^d = x (\text{mod } q)$.
-So we have $\forall x \in \mathbb{Z}_n, x^{ed} = x (\text{mod } pq)$.
+By Fermat's Little Theorem, $x^p \equiv x (\text{mod } p)$, so $x \cdot (x^p)^k \cdot x^{-k} \equiv x \cdot x^k \cdot x^{-k} = x (\text{mod } p)$.
+By symmetry, $(x^e)^d \equiv x (\text{mod } q)$.
+So we have $\forall x \in \mathbb{Z}_n, x^{ed} \equiv x (\text{mod } pq)$.
 
 [^2]: An equivalent system was developed independently and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
 [^1]: Numberphile did an [RSA video](LINK) which explains why this choice of $e$ is pretty good.

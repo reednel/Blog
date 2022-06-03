@@ -5,17 +5,17 @@ title: "An Introduction to RSA Encryption"
 ---
 
 
-### Overview
+## Overview
 
-Encryption is all about encoding information with the end of limiting (meaningful) access to it. Usually when we're talking about encryption/decryption, it's in the context of an outgoing/incoming message. You use encryption dozens or hundreds of times a day without ever having to think about it. Every credit card swipe every iMessage, every HTTPS visit, and every packet sent to your wireless headphones is encrypted. Anyone intercepting your data while it's in motion is only reading garbage (so long as they can't decrypt it).
+Encryption is all about encoding information with the end of limiting (meaningful) access to it. Usually when we're talking about encryption/decryption, it's in the context of an outgoing/incoming message. You use encryption dozens or hundreds of times a day without ever having to think about it. Every credit card swipe, every iMessage, every HTTPS visit, and every packet sent to your wireless headphones is encrypted. Anyone intercepting your data while it's in motion is only reading garbage (so long as they can't decrypt it).
 
-RSA is a public-key encryption algorithm developed at MIT in the 70's[^2] by researchers Rivest, Shamir, and Adleman (hence, RSA). It's simple enough to understand, but it's very secure. Despite its age, RSA remains one of the most widely used public-key encryption schemes. "Public-key" isn't some throwaway phrase, it's integral to the description of RSA, and it describes a very significant class of ciphersystems in Cryptogrphy. To build context for this concept and for RSA, we'll first look at a more traditional class of systems.
+RSA is an encryption algorithm developed at MIT in the 70's[^2] by researchers Rivest, Shamir, and Adleman (hence, RSA). It's simple enough to understand, but it's very secure. Despite its age, RSA remains one of the most widely used public-key encryption schemes. "Public-key" isn't some throwaway phrase, it's integral to the description of RSA, and it describes a very significant class of ciphersystems in Cryptography. To build context for this concept and for RSA, we'll first look at a more traditional class of systems.
 
 #### A Bit About Modular Arithmetic
 
-The modulus operator gives the remainder of an integer division. For example, $5 \text{ mod } 3 = 2$. Equivalently, we say $5 \equiv 2 (\text{mod } 3)$, "five is congruent to two, mod three". $\mathbb{Z}$ denotes the set of integers, and $\mathbb{Z}_n$ denotes the set of integers modulo $n$, i.e. $\{0, 1, 2, ..., n-1\}$.
+The modulus operator returns the remainder of an integer division. For example, $5 \text{ mod } 3 = 2$. Equivalently, we say $5 \equiv 2 (\text{mod } 3)$, "five is congruent to two, mod three". $\mathbb{Z}$ denotes the set of integers, and $\mathbb{Z}_n$ denotes the set of integers modulo $n$, i.e. $\{0, 1, 2, ..., n-1\}$.
 
-### Traditional Ciphersystems
+## Traditional Ciphersystems
 
 A ciphersystem $(P, C, K, e, d)$ is defined with the following components:
 $P = $ a set of plaintexts
@@ -33,27 +33,26 @@ $e_k(x) = x + k (\text{mod } 26)$
 $d_k(y) = x - k (\text{mod } 26)$
 What this means is we're working with a $26$ character alphabet (i.e. $A, ..., Z$), where each character is mapped to a number (i.e. $A = 0, ..., Z = 25$). Then if we choose the key to be $3$, we have $e_3(A) = D, e_3(B) = E, ..., e_3(Z) = B$. So all we've done is shifted (rotated) each character in our message by $3$ characters. $k$ can be any integer from $0$ through $25$ ($26 \equiv 0 (\text{mod } 26)$). When $k = 3$ specifically, this is called the Caesar cipher.
 
-### RSA
+## RSA
 
 RSA is a public key ciphersystem, which means that everyone can know how to encrypt a message, but the encryption key is not sufficient to decrypt the message. So the encryption function is still invertible (otherwise there would be no way to decrypt), but it is not easy to find the inverse of the encryption function. A function like this is sometimes called a one-way function, or a trapdoor function.
 
-RSA leverages this essential fact to create its one-way functions: it is relatively easy to compute very large prime numbers, but very difficult to find the prime factors of large numbers.
+RSA leverages this fact to create its one-way functions: it is relatively easy to compute very large prime numbers, but very difficult to find the prime factors of large numbers.
 
-Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ in $\{0, 1, ..., (p-1)(q-1)\}$, such that $e \cdot d = 1 (\text{mod } 26)$. That is, $e$ and $d$ are inverses in $\mathbb{Z} \text{ mod } (p-1)(q-1)$. At this point we can throw out everything but $e$, $d$, and $n$. we no longer need them and their dicovery would break the security of our scheme. Now we can share $(e, n)$ publicly, and must keep $d$ secret. The encryption for a message $M$ is $M^e (\text{mod } n)$, and the decryption is $(M^e)^d (\text{mod } n)$. It
-as simple as that.
+Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ in $\{0, 1, ..., (p-1)(q-1)\}$, such that $e \cdot d = 1 (\text{mod } 26)$. That is, $e$ and $d$ are inverses in $\mathbb{Z} \text{ mod } (p-1)(q-1)$. At this point we can throw out everything but $e$, $d$, and $n$. we no longer need them and their dicovery would break the security of our scheme. Now we can share $(e, n)$ publicly, and must keep $d$ secret. The encryption for a message $M$ is $M^e (\text{mod } n)$, and the decryption is $(M^e)^d (\text{mod } n)$. It's as simple as that.
 
-It's not obvious at all that $M^{e \cdot d} = M (\text{mod } p \cdot q)$ when $e \cdot d = 1 (\text{mod } (p-1)(q-1))$, but this fact is also essential for RSA to work as it does. I'll prove this statement below in case you're interested.
+It's not obvious at all that $M^{e \cdot d} = M (\text{mod } p \cdot q)$ when $e \cdot d = 1 (\text{mod } (p-1)(q-1))$, but this fact is essential for RSA to work as it does. I'll prove this statement below in case you're interested.
 
-I've already mentioned that RSA is widely used today, but in particular many RSA systems use a $2048$ bit (~$600$ digit) "$n$" value, and an "$e$" value of precisely $65,537$. If you like your powers of two, you may recognize this as $2^{16}+1$[^1].
-
-For a sense of scale, the number of atoms in the universe has about $80$ digits. So the numbers we're working with here are truly massive. This may raise a couple concerns for you.
+I've already mentioned that RSA is widely used today, but in particular many RSA systems use a $2048$ bit (~$600$ digit) "$n$" value, and an "$e$" value of precisely $65,537$. If you like your powers of two, you may recognize this as $2^{16}+1$[^1]. For a sense of scale, the number of atoms in the universe has about $80$ digits. The numbers we're working with here are truly massive, so this may raise a couple concerns for you.
 
 First, isn't it difficult to find prime numbers that large to use for $p$ and $q$?
-Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are apporximately $\frac{n}{\ln(n)}$ primes in the first $n$ naturals. So in pratice, it's reasonable to iteratively take numbers in some ballpark and do a [primality test](https://en.wikipedia.org/wiki/Primality_test). This can be done much faster than finding the prime factors in general. Naively all you'd have to do is check if any prime between $2$ and $\sqrt{n}$ divides $n$.
+Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are apporximately $\frac{n}{\ln(n)}$ primes in the first $n$ natural numbers. So in pratice, it's reasonable to iteratively take numbers in some ballpark and do a [primality test](https://en.wikipedia.org/wiki/Primality_test). Naively all you'd have to do is check if any prime between $2$ and $\sqrt{n}$ divides $n$. So clearly this can be done much faster than finding the prime factors in general (which we said earlier was hard).
 
 Second, isn't it difficult to reduce such huge exponents to encrypt and decrypt messages?
-Not really! Since we're doing modular exponentiation, we can be super efficient. Let's do an example. Say we want to encrypt the letter X ($23^{rd}$ letter) with the key $e = 25$ in $\mathbb{Z}_{26}$. We want to know $23^{25} (\text{mod } 26)$. Computing directly gives $23^{25} = 11,045,767,571,919,545,466,173,812,409,689,943$. But that took a ton of sub-operations, and we have to do a ton more to find this value mod $26$. By leveraging the fact we're working in $\mathbb{Z}_{26}$, we can reduce this to order $O(\log(n))$ operations. $23^{25} = (23^{12})^2 \cdot 23 = ((23^6)^2)^2 \cdot 23 = (((23^3)^2)^2)^2 \cdot 23 = (((23 \cdot 23^2)^2)^2)^2 \cdot 23$. $23^2 (\text{mod } 26) = 529 (\text{mod } 26) \equiv 9$. $23 * 9 (\text{mod } 26) = 207 (\text{mod } 26) \equiv 25$. Now we have $(((25)^2)^2)^2$. Almost there! $25^2 = 625 \equiv 1$, and of course $1$ to any power is $1$. So $23^{25} \equiv 1 (\text{mod } 26)$.
+Not really! Since we're doing modular exponentiation, we can be super efficient. Let's do an example. Say we want to encrypt the letter "X" ($23^{rd}$ letter) with the key $e = 25$ in $\mathbb{Z}_{26}$. We want to know $23^{25} (\text{mod } 26)$. Computing directly gives $23^{25} = 11,045,767,571,919,545,466,173,812,409,689,943$. But that took a ton of sub-operations, and we have to do a ton more to find this value mod $26$. By leveraging the fact we're working in $\mathbb{Z}_{26}$, we can reduce this to order $O(\log(n))$ operations. $23^{25} = (23^{12})^2 \cdot 23 = ((23^6)^2)^2 \cdot 23 = (((23^3)^2)^2)^2 \cdot 23 = (((23 \cdot 23^2)^2)^2)^2 \cdot 23$. $23^2 (\text{mod } 26) = 529 (\text{mod } 26) \equiv 9$. $23 \cdot 9 (\text{mod } 26) = 207 (\text{mod } 26) \equiv 25$. Now we have $(((25)^2)^2)^2$. Almost there! $25^2 = 625 \equiv 1$, and of course $1$ to any power is $1$. So $23^{25} \equiv 1 (\text{mod } 26)$.
 By finding modular equivalences in intermediate steps, we're able to keep the size of our multiplications in a reasonable range.
+
+[closing remarks]
 
 #### Proof that $\forall x \in \mathbb{Z}_{pq},\, x^{ed} \equiv x$
 
@@ -66,5 +65,5 @@ By symmetry, $(x^e)^d \equiv x (\text{mod } q)$.
 So we have $\forall x \in \mathbb{Z}_n, x^{ed} \equiv x (\text{mod } pq)$.
 
 [^2]: An equivalent system was developed independently and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
-[^1]: Numberphile did an [RSA video](LINK) which explains why this choice of $e$ is pretty good.
+[^1]: Numberphile has several RSA-related videos. [This one](https://youtu.be/cbGB__V8MNk) explains why $2^{16}+1$ is a pretty good choice of $e$.
 [^0]: The second coolest theorem with a name of the form "Fermat's L___ Theorem".

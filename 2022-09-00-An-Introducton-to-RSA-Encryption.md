@@ -9,7 +9,7 @@ title: "An Introduction to RSA Encryption"
 
 Encryption is all about encoding information with the end of limiting (meaningful) access to it. Usually when we're talking about encryption/decryption, it's in the context of an outgoing/incoming message. You use encryption dozens or hundreds of times a day without ever having to think about it. Every credit card swipe, every iMessage, every HTTPS visit, and every packet sent to your wireless headphones is encrypted. Anyone intercepting your data while it's in motion is only reading garbage (so long as they can't decrypt it).
 
-RSA is an encryption algorithm developed at MIT in the 70's[^2] by researchers Rivest, Shamir, and Adleman (hence, RSA). It's simple enough to understand, but it's very secure. Despite its age, RSA remains one of the most widely used public-key encryption schemes. "Public-key" isn't some throwaway phrase, it's integral to the description of RSA, and it describes a very significant class of ciphersystems in Cryptography. To build context for this concept and for RSA, we'll first look at a more traditional class of systems.
+RSA is an encryption algorithm developed at MIT in the 70's[^0] by researchers Rivest, Shamir, and Adleman (hence, RSA). It's simple enough to understand, but it's very secure. Despite its age, RSA remains one of the most widely used public-key encryption schemes. "Public-key" isn't some throwaway phrase, it's integral to the description of RSA, and it describes a very significant class of ciphersystems in Cryptography. To build context for this concept and for RSA, we'll first look at a more traditional class of systems.
 
 #### A Bit About Modular Arithmetic
 
@@ -52,11 +52,15 @@ Second, isn't it difficult to reduce such huge exponents to encrypt and decrypt 
 Not really! Since we're doing modular exponentiation, we can be super efficient. Let's do an example. Say we want to encrypt the letter "X" ($23^{rd}$ letter) with the key $e = 25$ in $\mathbb{Z}_{26}$. We want to know $23^{25} (\text{mod } 26)$. Computing directly gives $23^{25} = 11,045,767,571,919,545,466,173,812,409,689,943$. But that took a ton of sub-operations, and we have to do a ton more to find this value mod $26$. By leveraging the fact we're working in $\mathbb{Z}_{26}$, we can reduce this to order $O(\log(n))$ operations. $23^{25} = (23^{12})^2 \cdot 23 = ((23^6)^2)^2 \cdot 23 = (((23^3)^2)^2)^2 \cdot 23 = (((23 \cdot 23^2)^2)^2)^2 \cdot 23$. $23^2 (\text{mod } 26) = 529 (\text{mod } 26) \equiv 9$. $23 \cdot 9 (\text{mod } 26) = 207 (\text{mod } 26) \equiv 25$. Now we have $(((25)^2)^2)^2$. Almost there! $25^2 = 625 \equiv 1$, and of course $1$ to any power is $1$. So $23^{25} \equiv 1 (\text{mod } 26)$.
 By finding modular equivalences in intermediate steps, we're able to keep the size of our multiplications in a reasonable range.
 
-[closing remarks]
+## Closing Remarks
+
+Hopefully you learned some cryptography.
+
+---
 
 #### Proof that $\forall x \in \mathbb{Z}_{pq},\, x^{ed} \equiv x$
 
-Fermat's Little Theorem[^0]: if $p$ is prime, then $x^p \equiv x (\text{mod } p)$.
+Fermat's Little Theorem[^2]: if $p$ is prime, then $x^p \equiv x (\text{mod } p)$.
 By construction, $ed \equiv 1 \text{ mod } (p-1)(q-1)$, so $(ed-1)$ is a multiple of $(p-1)(q-1)$.
 That is, $\exists k \in \mathbb{Z}:\, ed-1 = k(p-1)$.
 Then $(x^e)^d = x^{ed} = x \cdot x^{ed-1} = x \cdot x^{k(p-1)} = x \cdot (x^p)^k \cdot x^{-k}$.
@@ -64,6 +68,6 @@ By Fermat's Little Theorem, $x^p \equiv x (\text{mod } p)$, so $x \cdot (x^p)^k 
 By symmetry, $(x^e)^d \equiv x (\text{mod } q)$.
 So we have $\forall x \in \mathbb{Z}_n, x^{ed} \equiv x (\text{mod } pq)$.
 
-[^2]: An equivalent system was developed independently and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
+[^0]: An equivalent system was developed secretly and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
 [^1]: Numberphile has several RSA-related videos. [This one](https://youtu.be/cbGB__V8MNk) explains why $2^{16}+1$ is a pretty good choice of $e$.
-[^0]: The second coolest theorem with a name of the form "Fermat's L___ Theorem".
+[^2]: The second coolest theorem with a name of the form "Fermat's L___ Theorem".

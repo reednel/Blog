@@ -1,0 +1,26 @@
+---
+layout: post
+author: Reed Nelson
+title: "Data Compression"
+---
+
+## Overview
+
+Data compression is a process of modifying the representation of some information so that it can be stored using less data.
+
+- Motivation: why do compression?
+
+## Entropy - Formally Quantifying Information
+
+## ?Applying Entropy?
+
+## Huffman Coding
+
+- Naive method of storing data: array of unicde chars
+- Something super cool and super rare: Huffman's one-shot
+
+Essential to compression is that language is not uniform. That is, "A" doesn't appear with the same frequence as "Z". "A" makes up about 8% of all letters we write (as english speakers), but "Z" makes up a mere 0.07%[^1].
+
+[^0]: [Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon) is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book "A Mathematical Theory of Communication", which a math professor of mine described as "one of the most important books in science in the last century".
+
+[^1]: This statistic is from the Wikipedia page on [Letter Frequency](https://en.wikipedia.org/wiki/Letter_frequency).

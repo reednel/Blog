@@ -10,13 +10,26 @@ Data compression is a process of modifying the representation of some informatio
 
 - Motivation: why do compression?
 
-## Entropy - Formally Quantifying Information
+## Entropy - ?Formally Quantifying Information?
 
-## ?Applying Entropy?
+Let $\Omega$ be some set, and $P = \{p_i,\, i\in \Omega\}$ be the probability distribution over $\Omega$, i.e. the frequency with which each element of $\Omega$ occurs. The entropy of $\Omega$ is a measure of how structured (non-uniform) $P$ is. So for example, the uniform distribution, where $\forall p_i \in \Omega,\, p_i = \frac{1}{|\Omega|}$, is the most structured, and the lowest entropy. Conversely, the distribution where $p_{i_0} = 1,\, p_i = 0 \, \forall i \neq i_0$, is the most structured, and has the most entropy.
+
+More intuitively, entropy can be thought of as a measure of uncertainty in random choices from $\Omega$, using $P$.
+
+Formally, the Entropy of $P$ is given by $H(P) = - \sum\limits_{i \in \Omega} p_i (\log(p_i))$.
+
+Fact: $0 \leq H(P) \leq \log(|\Omega|) = H(P_{uniform})$.
+
+#### Applying Entropy [maybe not]
+
+?Remarkably, a choice from $\Omega$ contains $H$ bits of information per element.
+
+Take $\Omega = \{A, B, ..., Z\}$. $\log(|\Omega|) = \log(26) = 4.17$. Then naively we can represent the alphabet using 5 bits. Perhaps $A = 00000, B = 00001, ..., Z = 11001$. Now we can imagine using this coding on a text file we wrote (of only these 26 characters). The size of this file (ignoring metadata and whatever) is 5 bits per character $\times$ the number of characters.
+
+Already you might see that this is suboptimal. With 5 bits, you can represent as many as 32 characters, so we could add 6 more chacters to our alphabet without using any extra data per character. This is an improvement, but still we're restricting ourselves. What if we used a variable number of bits per character?
 
 ## Huffman Coding
 
-- Naive method of storing data: array of unicde chars
 - Something super cool and super rare: Huffman's one-shot
 
 Essential to compression is that language is not uniform. That is, "A" doesn't appear with the same frequence as "Z". "A" makes up about 8% of all letters we write (as english speakers), but "Z" makes up a mere 0.07%[^1].

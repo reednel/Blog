@@ -35,7 +35,8 @@ What this means is we're working with a $26$ character alphabet (i.e. $A, ..., Z
 
 ## RSA
 
-RSA is a public key ciphersystem, which means that everyone can know how to encrypt a message, but the encryption key is not sufficient to decrypt the message. So the encryption function is still invertible (otherwise there would be no way to decrypt), but it is not easy to find the inverse of the encryption function. A function like this is sometimes called a one-way function, or a trapdoor function.
+RSA is a public key ciphersystem, which means that everyone can know how to encrypt a message, but the encryption key is not sufficient to decrypt the message. So the encryption function is still invertible (otherwise there would be no way to decrypt), but it is not easy to find the inverse of the encryption function. A function like this is called a [**one-way function**](https://en.wikipedia.org/wiki/One-way_function)[^1], or a trapdoor function.
+By "hard to decrypt" we mean something like "a modern computer could run until the universe burns out and still have almost no chance of decrypting".
 
 RSA leverages this fact to create its one-way functions: it is relatively easy to compute very large prime numbers, but very difficult to find the prime factors of large numbers.
 
@@ -43,7 +44,7 @@ Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ 
 
 It's not obvious at all that $M^{e \cdot d} = M (\text{mod } p \cdot q)$ when $e \cdot d = 1 (\text{mod } (p-1)(q-1))$, but this fact is essential for RSA to work as it does. I'll prove this statement below in case you're interested.
 
-I've already mentioned that RSA is widely used today, but in particular many RSA systems use a $2048$ bit (~$600$ digit) "$n$" value, and an "$e$" value of precisely $65,537$. If you like your powers of two, you may recognize this as $2^{16}+1$[^1]. For a sense of scale, the number of atoms in the universe has about $80$ digits. The numbers we're working with here are truly massive, so this may raise a couple concerns for you.
+I've already mentioned that RSA is widely used today, but in particular many RSA systems use a $2048$ bit (~$600$ digit) "$n$" value, and an "$e$" value of precisely $65,537$. If you like your powers of two, you may recognize this as $2^{16}+1$[^2]. For a sense of scale, the number of atoms in the universe has about $80$ digits. The numbers we're working with here are truly massive, so this may raise a couple concerns for you.
 
 First, isn't it difficult to find prime numbers that large to use for $p$ and $q$?
 Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are apporximately $\frac{n}{\ln(n)}$ primes in the first $n$ natural numbers. So in pratice, it's reasonable to iteratively take numbers in some ballpark and do a [primality test](https://en.wikipedia.org/wiki/Primality_test). Naively all you'd have to do is check if any prime between $2$ and $\sqrt{n}$ divides $n$. So clearly this can be done much faster than finding the prime factors in general (which we said earlier was hard).
@@ -60,7 +61,7 @@ Hopefully you learned some cryptography.
 
 #### Proof that $\forall x \in \mathbb{Z}_{pq},\, x^{ed} \equiv x$
 
-Fermat's Little Theorem[^2]: if $p$ is prime, then $x^p \equiv x (\text{mod } p)$.
+Fermat's Little Theorem[^3]: if $p$ is prime, then $x^p \equiv x (\text{mod } p)$.
 By construction, $ed \equiv 1 \text{ mod } (p-1)(q-1)$, so $(ed-1)$ is a multiple of $(p-1)(q-1)$.
 That is, $\exists k \in \mathbb{Z}:\, ed-1 = k(p-1)$.
 Then $(x^e)^d = x^{ed} = x \cdot x^{ed-1} = x \cdot x^{k(p-1)} = x \cdot (x^p)^k \cdot x^{-k}$.
@@ -69,5 +70,6 @@ By symmetry, $(x^e)^d \equiv x (\text{mod } q)$.
 So we have $\forall x \in \mathbb{Z}_n, x^{ed} \equiv x (\text{mod } pq)$.
 
 [^0]: An equivalent system was developed secretly and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
-[^1]: Numberphile has several RSA-related videos. [This one](https://youtu.be/cbGB__V8MNk) explains why $2^{16}+1$ is a pretty good choice of $e$.
-[^2]: The second coolest theorem with a name of the form "Fermat's L___ Theorem".
+[^1]: The existence of one-way functions is actually only a conjecture! To prove OWFs exist is to prove $P \neq NP$. That is to say, RSA's security depends on a very big (but probably safe) assumption.
+[^2]: [Numberphile](https://www.youtube.com/c/numberphile) has several RSA-related videos. [This one](https://youtu.be/cbGB__V8MNk) explains why $2^{16}+1$ is a pretty good choice of $e$.
+[^3]: The second coolest theorem with a name of the form "Fermat's L___ Theorem".

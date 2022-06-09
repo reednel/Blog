@@ -19,7 +19,7 @@ Formally, the **entropy** of $P$ is given by $H(P) = - \sum\limits_{i \in \Omega
 
 Fact: $0 \leq H(P) \leq \log(|\Omega|) = H(P_{uniform})$.
 
-#### Applying Entropy [maybe not]
+#### Applying Entropy 
 
 ?Remarkably, a choice from $\Omega$ contains $H$ bits of information per element.
 
@@ -49,6 +49,6 @@ Theorem: there exists a prefix code for ...
 - Somehow we knew what the optimal is
 - Huffman's simple ?$O(n\log(n))$ algorithm finds an optimal coding.
 
-[^0]: [Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon) is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book *A Mathematical Theory of Communication*, which a professor of mine described as "one of the most important books in science in the last century".
+[^0]: [Claude Shannon](https://en.wikipedia.org/wiki/Claude_Shannon) is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book *A Mathematical Theory of Communication*, which a professor of mine once described as "one of the most important books in science in the last century".
 
 [^1]: This statistic is from the Wikipedia page on [Letter Frequency](https://en.wikipedia.org/wiki/Letter_frequency).

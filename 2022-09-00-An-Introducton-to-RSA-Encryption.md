@@ -15,9 +15,9 @@ RSA is an encryption algorithm developed at MIT in the 70's[^0] by researchers R
 
 The modulus operator returns the remainder of an integer division. For example, $5 \text{ mod } 3 = 2$. Equivalently, we say $5 \equiv 2 (\text{mod } 3)$, "five is congruent to two, mod three". $\mathbb{Z}$ denotes the set of integers, and $\mathbb{Z}_n$ denotes the set of integers modulo $n$, i.e. $\{0, 1, 2, ..., n-1\}$.
 
-## Traditional Ciphersystems
+## Traditional Cipher Systems
 
-A ciphersystem $(P, C, K, e, d)$ is defined with the following components:
+A **cipher system** $(P, C, K, e, d)$ is defined with the following components:
 $P = $ a set of plaintexts
 $C = $ a set of ciphertexts
 $K = $ a set of keys
@@ -40,9 +40,9 @@ By "hard to decrypt" we mean something like "a modern computer could run until t
 
 RSA leverages this fact to create its one-way functions: it is relatively easy to compute very large prime numbers, but very difficult to find the prime factors of large numbers.
 
-Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ in $\{0, 1, ..., (p-1)(q-1)\}$, such that $e \cdot d = 1 (\text{mod } 26)$. That is, $e$ and $d$ are inverses in $\mathbb{Z} \text{ mod } (p-1)(q-1)$. At this point we can throw out everything but $e$, $d$, and $n$. we no longer need them and their dicovery would break the security of our scheme. Now we can share $(e, n)$ publicly, and must keep $d$ secret. The encryption for a message $M$ is $M^e (\text{mod } n)$, and the decryption is $(M^e)^d (\text{mod } n)$. It's as simple as that.
+Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ in $\mathbb{Z}_{(p-1)(q-1)}$, such that $e \cdot d \equiv 1 (\text{mod } 26)$. That is, $e$ and $d$ are inverses in $\mathbb{Z}_{(p-1)(q-1)}$. At this point we can throw out everything but $e$, $d$, and $n$. we no longer need them and their dicovery would break the security of our scheme. Now we can share $(e, n)$ publicly, and must keep $d$ secret. The encryption for a message $M$ is $M^e (\text{mod } n)$, and the decryption is $(M^e)^d (\text{mod } n)$. It's as simple as that.
 
-It's not obvious at all that $M^{e \cdot d} = M (\text{mod } p \cdot q)$ when $e \cdot d = 1 (\text{mod } (p-1)(q-1))$, but this fact is essential for RSA to work as it does. I'll prove this statement below in case you're interested.
+It's not obvious at all that $M^{e \cdot d} \equiv M (\text{mod } p \cdot q)$ when $e \cdot d \equiv 1 (\text{mod } (p-1)(q-1))$, but this fact is essential for RSA to work as it does. I'll prove this statement below in case you're interested.
 
 I've already mentioned that RSA is widely used today, but in particular many RSA systems use a $2048$ bit (~$600$ digit) "$n$" value, and an "$e$" value of precisely $65,537$. If you like your powers of two, you may recognize this as $2^{16}+1$[^2]. For a sense of scale, the number of atoms in the universe has about $80$ digits. The numbers we're working with here are truly massive, so this may raise a couple concerns for you.
 
@@ -51,7 +51,7 @@ Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the 
 
 Second, isn't it difficult to reduce such huge exponents to encrypt and decrypt messages?
 Not really! Since we're doing modular exponentiation, we can be super efficient. Let's do an example. Say we want to encrypt the letter "X" ($23^{rd}$ letter) with the key $e = 25$ in $\mathbb{Z}_{26}$. We want to know $23^{25} (\text{mod } 26)$. Computing directly gives $23^{25} = 11,045,767,571,919,545,466,173,812,409,689,943$. But that took a ton of sub-operations, and we have to do a ton more to find this value mod $26$. By leveraging the fact we're working in $\mathbb{Z}_{26}$, we can reduce this to order $O(\log(n))$ operations. $23^{25} = (23^{12})^2 \cdot 23 = ((23^6)^2)^2 \cdot 23 = (((23^3)^2)^2)^2 \cdot 23 = (((23 \cdot 23^2)^2)^2)^2 \cdot 23$. $23^2 (\text{mod } 26) = 529 (\text{mod } 26) \equiv 9$. $23 \cdot 9 (\text{mod } 26) = 207 (\text{mod } 26) \equiv 25$. Now we have $(((25)^2)^2)^2$. Almost there! $25^2 = 625 \equiv 1$, and of course $1$ to any power is $1$. So $23^{25} \equiv 1 (\text{mod } 26)$.
-By finding modular equivalences in intermediate steps, we're able to keep the size of our multiplications in a reasonable range.
+TLDR: by finding modular equivalences in intermediate steps, we're able to keep the size of our multiplications in a reasonable range.
 
 ## Closing Remarks
 

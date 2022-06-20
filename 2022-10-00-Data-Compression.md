@@ -13,8 +13,9 @@ title: "Huffman Data Compression"
 [^0]
 Let $\Omega$ be some set, and $P = \{p_i,\, i\in \Omega\}$ be the probability distribution over $\Omega$, i.e. the frequency with which each element of $\Omega$ occurs. The entropy of $\Omega$ is a measure of how structured (non-uniform) $P$ is. So for example, the uniform distribution (where $\forall p_i \in \Omega,\, p_i = \frac{1}{|\Omega|}$) is the least structured, and the lowest entropy. Conversely, the distribution where $p_{i_0} = 1,\, p_i = 0 \, \forall i \neq i_0$, is the most structured, and has the most entropy.
 
-More intuitively, entropy can be thought of as a measure of uncertainty in random choices from $\Omega$, using $P$.
-[But that's not actually intuitive, fix]
+More intuitively, entropy can be thought of as a measure of 
+It may be useful to think 
+uncertainty in random choices from $\Omega$, using $P$.
 
 Formally, the **entropy** of $P$ is given by $H(P) = - \sum\limits_{i \in \Omega} p_i \cdot \log(p_i)$.
 
@@ -36,7 +37,7 @@ A **prefix code** is a code where no coded character is a prefix of another char
 
 With this we can talk about expected lengths...
 
-The expected length $L$ of a code is the sum of the probability $p$ of each character ocurring, multiplied by the length $\ell$ of that character's code.
+The **expected length** $L$ of a code is the sum of the probability $p$ of each character ocurring, multiplied by the length $\ell$ of that character's code.
 That is, $L(C) = \sum\limits_{x \in \Omega}p(x) \cdot \ell(x)$.
 Practically, this means that on average we expect a message $n$ characters long (using this coding) to take up $n \times L(C)$ bits.
 
@@ -48,7 +49,7 @@ Theorem: there exists a prefix code for ...
 
 0. Start with the system $\Omega = x_1, x_2,..., x_n$, and $p = $ the probability function.
 
-1. Take $x_i, x_j$ of lowest probability.
+1. Take $x_i, x_j$ of lowest probability in $\Omega$.
 
 2. Remove $x_i$ and $x_j$ from $\Omega$, and add to $\Omega$ a new character $\chi$, where $p(\chi) = p(x_i) + p(x_j)$.
 

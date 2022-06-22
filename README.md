@@ -1,15 +1,15 @@
 # Blog
 
-This repository contains all of my posts to the [UPL Blog](https://www.upl.cs.wisc.edu/blog.html).
+This repository contains all of the posts to [my blog](https://www.pages.cs.wisc.edu/~rnelson/blog). Some also appear on the [UPL blog](https://www.upl.cs.wisc.edu/blog.html).
 
-### Artificial Consciousness and Phenomenology
-
-To identify the requirements for a conscious machine, I believe we ought to look beyond mechanical scientific accounts of what makes a human human. Using a phenomenological approach to this subject, we stand to better express what is necessary for a true, human-level artificial consciousness.
-
-### An Inroduction to RSA Encryption
+## An Inroduction to RSA Encryption
 
 You use the RSA encryption scheme every day. It's simple enough to understand, but quite powerful. In this post, we discuss the basics of ciphersystems, public key encryption and RSA, and why RSA works so well.
 
-### The Psychology of Love
+## Artificial Consciousness and Phenomenology
 
-In this post, we'll discuss a General Theory of Love, which offers an explanation for...
+To identify the requirements for a conscious machine, I believe we ought to look beyond mechanical scientific accounts of what makes a human human. Using a phenomenological approach to this subject, we stand to better express what is necessary for a true, human-level artificial consciousness.
+
+## The Psychology of Love
+
+In this post, we discuss a General Theory of Love, which makes bold and uplifting claims about the power of the emotional mind. Whether or not the theory is completely true, there are valuable ideas to be gleaned.

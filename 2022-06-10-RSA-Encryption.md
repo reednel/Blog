@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Reed Nelson
-title: "An Introduction to RSA Encryption"
+title: "RSA Encryption"
 ---
 
 

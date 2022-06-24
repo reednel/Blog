@@ -10,7 +10,7 @@ title: "Huffman Data Compression"
 
 ## Entropy - ?Formally Quantifying Information?
 
-[^0]
+[^1]
 Let $\Omega$ be some set, and $P = \{p_i,\, i\in \Omega\}$ be the probability distribution over $\Omega$, i.e. the frequency with which each element of $\Omega$ occurs. The entropy of $\Omega$ is a measure of how structured (non-uniform) $P$ is. So for example, the uniform distribution (where $\forall p_i \in \Omega,\, p_i = \frac{1}{|\Omega|}$) is the least structured, and the lowest entropy. Conversely, the distribution where $p_{i_0} = 1,\, p_i = 0 \, \forall i \neq i_0$, is the most structured, and has the most entropy.
 
 More intuitively, entropy can be thought of as a measure of 
@@ -41,7 +41,7 @@ The **expected length** $L$ of a code is the sum of the probability $p$ of each 
 That is, $L(C) = \sum\limits_{x \in \Omega}p(x) \cdot \ell(x)$.
 Practically, this means that on average we expect a message $n$ characters long (using this coding) to take up $n \times L(C)$ bits.
 
-Of course, the goal of compression is to use a coding of minimal expected length. It is essential to this project that language is not uniform. When speaking English, $A$ doesn't appear with the same frequence as $Z$. In fact, $A$ makes up about $8\%$ of all letters we write, but $Z$ makes up a mere $0.07\%$[^1]. Intuitively, we want our code to reserve the shortest bit strings for the most common letters, like $A$ and $E$, and assign the longer codings to the rare characters, like $Z$ and $Q$. To reiterate, the higher the entropy in a set of characters, the more compressible it is.
+Of course, the goal of compression is to use a coding of minimal expected length. It is essential to this project that language is not uniform. When speaking English, $A$ doesn't appear with the same frequence as $Z$. In fact, $A$ makes up about $8\%$ of all letters we write, but $Z$ makes up a mere $0.07\%$[^2]. Intuitively, we want our code to reserve the shortest bit strings for the most common letters, like $A$ and $E$, and assign the longer codings to the rare characters, like $Z$ and $Q$. To reiterate, the higher the entropy in a set of characters, the more compressible it is.
 
 Theorem: there exists a prefix code for ...
 
@@ -61,13 +61,13 @@ Theorem: there exists a prefix code for ...
 
 [example ]
 
-[^2]
+[^3]
 
 - Something super cool and super rare: Huffman's one-shot
 - Huffman's simple ?$O(n\log(n))$ algorithm finds an optimal (wait not actually) coding.
 
-[^0]: Claude Shannon is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book *A Mathematical Theory of Communication*, which a professor of mine once described as "one of the most important books in science in the last century".
+[^1]: Claude Shannon is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book *A Mathematical Theory of Communication*, which a professor of mine once described as "one of the most important books in science in the last century".
 
-[^1]: This statistic is from the Wikipedia page on [Letter Frequency](https://en.wikipedia.org/wiki/Letter_frequency).
+[^2]: This statistic is from the Wikipedia page on [Letter Frequency](https://en.wikipedia.org/wiki/Letter_frequency).
 
-[^2]: David Huffman, [A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)
+[^3]: David Huffman, [A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)

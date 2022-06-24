@@ -16,7 +16,7 @@ There’s a lot of murkiness around the concept of dharma because it has such a 
 
 Each person’s Dharma is unique to them. Plumber Claire and Plumber Dave may both have found their place, fulfilled in their trade, but dharma is wholly personalized. The personal idiosyncracies make all the difference. Nobody else can be you, and you will not be satisfied if you try to be anyone else. The thought is that every base will be covered if everyone acts on their calling. As in, you wouldn't run into issues where nobody's dharma is to be a physician, or a firefighter.
 
-One cannot get a new Dharma, but a Dharma can change over time.
+One cannot get a new Dharma, but a Dharma can change over time. Perhaps the firefighter finds a new calling in bartending.
 
 Yogis believe that everyone’s greatest responsibility in life is to their dharma, to embody it completely.
 
@@ -52,7 +52,7 @@ Practice deliberately. Considerable research has been done regarding the develop
 
 4. Spend considerable time in the domain of the task. So if you’re a philosopher, that might mean vibing with other philosophers, talking about their ideas, their approaches, and yours.
 
-Tied up in true mastery is usually a very rare, strong attention to detail and pattern recognition. Sometimes to the point that the novice or journeyman can’t recognize it even when it’s pointed out. Henry David Thorou is someone the authors consider to have lived his dharma. Not long after graduating from Harvard, he moved to New York to write next to the big dogs of his time. He was a colossal failure, and within a couple years, he moved back to Concord, MA where he grew up. Then he went to Walden Pond, somewhere he could connect with, and had everything he needed to hone his craft. The result was not just an American classic, but by the time he left, he’d classified plants and identified patterns in nature that were never before recorded.
+Tied up in true mastery is usually a very rare, strong attention to detail and pattern recognition. Sometimes to the point that the novice or journeyman can’t recognize it even when it’s pointed out. Henry David Thorou is someone the authors consider to have lived his dharma. Not long after graduating from Harvard, he moved to New York to write next to the big dogs of his time. He was a colossal failure, and within a couple years, he moved back to Concord, MA where he grew up. Then he went to Walden Pond, somewhere he could connect with, and had everything he needed to hone his craft. The result was not just an [American classic](https://en.wikipedia.org/wiki/Walden), but by the time he left, he’d classified plants and identified patterns in nature that were never before recorded.
 
 A final and very important note on this point is that the pleasure of mastery comes with an intimate knowledge of one’s domain, not control over it. The underlying philosophical thought from the Gita here is that the whole world is inside each person and every thing, and so to know any one part of the world deeply is, in a sense, to know the whole.
 
@@ -60,9 +60,11 @@ A final and very important note on this point is that the pleasure of mastery co
 
 The pleasure is found on the path, not at the destination. Common desires and ideals are to live a labor free life, to retire into leisure, and to be famous, powerful, or wealthy. But working to these ends will not bring a sense of fulfillment. Rather, fulfillment is found on the path to and in mastery of one’s craft (meeting the challenge of one’s dharma in the world).
 
-It’s better to fail at your own dharma than to succeed at another’s.
+It's important to have detachment from the outcome of one's dharma. One should never engage in action for the sake of reward. Perform work in this world without selfish attachments, work in success and in defeat. The idea is that the mind which clings to the outcome is one which is never fully engaged in the task at hand. Rather than being totally present, it’s leaning forward into what is yet to come. This person is miserable with doubt and anxiety, because they’re constantly asking themselves “how am I doing?” “am I winning or losing?”. It’s better to fail at one's own dharma than to succeed at another’s.
 
-Need detachment from the outcome of your dharma. One should never engage in action for the sake of reward. Perform work in this world without selfish attachments, work in success and in defeat. The idea is that the mind which clings to the outcome is one which is never fully engaged in the task at hand. Rather than being totally present, it’s leaning forward into what’s yet to come. This person is miserable with doubt and anxiety, because they’re constantly asking themselves “how am I doing?” “am I winning or losing?”.
+## Final Thoughts
+
+yes
 
 [^1]: [The Great Work of Your Life](https://www.stephencope.com/shop/books/the-great-work-of-your-life-a-guide-for-the-journey-to-your-true-calling/) by [Stephen Cope](https://en.wikipedia.org/wiki/Stephen_Cope). The book outlines the teachings of the Bhagavad Gita, which translates to “The Song of God” - It’s the most famous Hindu text. The story is a narrative of a dialogue between Arjuna, a great prince and warrior, (and babe), And Krishna, Arjuna’s charioteer. Though the reader knows Krishna is a Hindu god. The story’s set on a battlefield, and for the duration of the book, Arjuna is pretty much in the middle of an existential crisis over this war he’s fighting, and Arjuna is dropping wisdom on him to help him through it. Krishna’s teachings are the Gita’s teachings.
 

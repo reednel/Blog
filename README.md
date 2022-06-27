@@ -2,6 +2,10 @@
 
 This repository contains all of the posts to [my blog](https://www.pages.cs.wisc.edu/~rnelson/blog). Some also appear on the [UPL blog](https://www.upl.cs.wisc.edu/blog.html).
 
+## Huffman Data Compression
+
+Data compression is a process of modifying the representation of some information so that it can be stored using less data. We discuss *entropy*: how information is quantified, and *Huffman Coding*: a simple, speedy, and greedy compression algorithm.
+
 ## An Inroduction to RSA Encryption
 
 You use the RSA encryption scheme every day. It's simple enough to understand, but quite powerful. In this post, we discuss the basics of ciphersystems, public key encryption and RSA, and why RSA works so well.

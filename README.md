@@ -1,6 +1,6 @@
 # Blog
 
-This repository contains all of the posts to [my blog](https://www.pages.cs.wisc.edu/~rnelson/blog). Some also appear on the [UPL blog](https://www.upl.cs.wisc.edu/blog.html).
+This repository contains all of the posts to [my blog](https://pages.cs.wisc.edu/~rnelson/blog). Some also appear on the [UPL blog](https://www.upl.cs.wisc.edu/blog.html).
 
 ## Huffman Data Compression
 

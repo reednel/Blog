@@ -6,11 +6,11 @@ title: "Huffman Data Compression"
 
 ## Overview
 
-**Data compression** is a process of modifying the representation of some information so that it can be stored using less data. Storing and transmitting data is obviously expensive in large quantities, making an optimal compression (one which minimizes storage size) extremely valuable. In this post we will learn how to quantify data information-theoretically[^1], and learn how to get an optimal compression with optimal speed.
+**Data compression** is a process of modifying the representation of some information so that it can be stored using less data. Storing and transmitting data is expensive in large quantities, making an optimal compression (one which minimizes storage size) extremely valuable. In this post we will learn how to quantify data information-theoretically[^1], and how to get an optimal compression with optimal speed.
 
-The ratio of concepts and definitions to prose is pretty high in this post. I try to ameliorate that with examples and alternate descriptions, but the information is still dense. Assuming a bit of familiarity with binary and ASCII, these ideas are simple enough.
+The ratio of concepts and definitions to prose is pretty high in this post. I try to ameliorate that with examples and alternate descriptions, but the information is still dense. Assuming a bit of familiarity with binary and ASCII, nothing here should be too dificult to understand in broad strokes.
 
-## Entropy - Quantifying Information
+## Entropy: Quantifying Information
 
 Let $\Omega$ be some set, and $P = \{p_i,\, i\in \Omega\}$ be the probability distribution over $\Omega$, i.e. the frequency with which each element of $\Omega$ occurs. The entropy of $\Omega$ is a measure of how structured (non-uniform) $P$ is. So for example, the uniform distribution (where $\forall p_i \in \Omega,\, p_i = \frac{1}{|\Omega|}$) is the least structured, and the lowest entropy. Conversely, the distribution where $p_{i_0} = 1,\, p_i = 0 \, \forall i \neq i_0$, is the most structured, and has the most entropy.
 
@@ -40,11 +40,11 @@ Whether a coding will be good or bad at compression depends on its expected leng
 
 Of course, the goal of compression is to use a coding of minimal expected length. It is essential to this project that language is not uniform. When speaking English, $A$ doesn't appear with the same frequence as $Z$. In fact, $A$ makes up about $8\%$ of all letters we write, but $Z$ makes up a mere $0.07\%$[^2]. Intuitively, we want our code to reserve the shortest bit strings for the most common letters, like $A$ and $E$, and assign the longer codings to the rare characters, like $Z$ and $Q$. To reiterate, the higher the entropy in a set of characters, the more compressible it is.
 
-Theorem: there exists a prefix code for ...
+There is a theorem that states that there exists an optimal prefix code $C$, such that the expected length of $C$ is equal to or only a tiny bit larger than the entropy of the corresponding probability distribution. That is, $H(P) \leq L(C) < H(P) + \epsilon$.
 
 ## Huffman Coding
 
-In the 50's, MIT PhD student David Huffman had to write a paper proving some coding was optimal. He couldn't figure it out, but instead he thought up his own method[^3] and proved that coding was optimal. Huffman's professor [Robert Fano](https://en.wikipedia.org/wiki/Robert_Fano) had previously devised a coding algorithm with[^4] Claude Shannon himself, so when his student showed him a better algorithm, Fano canceled class for the rest of the term. [SEE WHAT SPRINGER BOOK HAS TO SAY ABOUT THIS]. In essence, this is the Huffman Coding:
+In the 50's, MIT PhD student David Huffman had to write a paper proving some coding was optimal. He couldn't figure it out, but instead he thought up his own method[^3] and proved that coding was optimal. Huffman's professor [Robert Fano](https://en.wikipedia.org/wiki/Robert_Fano) had previously devised a coding algorithm with[^4] Claude Shannon himself, so when his student showed him a better algorithm, Fano supposedly[^5] canceled class for the rest of the term. Just a bit of culture for you. In essence, this is the Huffman Coding:
 
 0. Start with the system $\Omega = x_1, x_2,..., x_n$, and $p = $ the probability function.
 
@@ -67,3 +67,5 @@ Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol codin
 [^3]: David Huffman, [A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)
 
 [^4]: Fano and Shannon didn't actually collaborate, rather they independently developed similar algorithms at almost the exact same time. Today these are clumped together as the [Shannon-Fano Coding](https://en.wikipedia.org/wiki/Shannon%E2%80%93Fano_coding).
+
+[^5]: I've only heard this part from one source.

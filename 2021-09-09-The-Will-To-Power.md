@@ -29,6 +29,8 @@ To Nietzsche, the existence or non-existence of a higher power such as the Chris
 
 So God tells us what to think (1), how to act (2), and gives us a reason to care about what he says (3). Nietzsche believed that in his day, the ideas and influence of Christianity  were beginning to lose their hold on society, and nothing had emerged to take its place.
 
+>“God is dead. God remains dead. And we have killed him. How shall we comfort ourselves, the murderers of all murderers”
+
 #### The Origin of Morality
 
 Morality can arise from many sources, but for now we'll pick on religion. Consider the following account of the origin of Christianity. What was initially given was a form of life occurring alongside other forms of life: a small group of people living out a modest existence in some dusty corner of the Roman Empire. These peoples practices subtly suggested a sense of what the world was about, but had no special significance to or validity to them or anybody. The religious belief system only begins to take shape when some figure comes along and bestows on them the sense that their way of life is of highest value. So basically Jesus came along and made this group feel noble and proud of their meekness and humility, this way of life which previously looked base and slavish. Over time this interpretation of the world was systematized, codified, and new generations were brought up on it as if it is The Truth, and always has been.
@@ -37,25 +39,31 @@ On this account, there is nothing validating a moral system beyond the agreement
 
 #### The Problem with Morality
 
-Christianity is detrimental to the strength of the will. Those who put their faith in God do so because they are weak, they seek someone to tell them what to think, how to act. They lack the strength to create their own meaning and exert their own will. Nietzsche thinks you should do away with your concern for what other people think about your moral behavior and what you think of theirs. Focus instead on becoming someone who doesn’t need affirmation to know they’re right. [Ties nicely into “become who you are”]
+Morality is by the sick and weak, for the sick and weak.
+
+Christianity is detrimental to the strength of the will. Those who put their faith in God do so because they are weak, they seek someone to tell them what to think, how to act. They lack the strength to create their own meaning and exert their own will. Nietzsche thinks you should do away with your concern for what other people think about your moral behavior and what you think of theirs. Focus instead on becoming someone who doesn’t need affirmation to know they’re right.
 
 ## The Positive Account: yes
 
 #### Nietzsche's *isms*
 
-**Anti-essentialism** is the doctrine that there is no “reality” to things, no “fact of the matter” about thing’s intrinsic natures.
+**Anti-essentialism** is the doctrine that there is no fact-of-the-matter about a thing's intrinsic nature.
 
 **Perspectivism** is the doctrine that there are only various finite, historically and culturally determined perspectives on what exists and that there is no God’s eye point of view from which one can survey what exists. That is, there is no getting to the bottom of “reality”. This is especially significant when it comes to something like science, which makes claims about reality and objectivity.
 
 **Moral Particularism** is the idea that General moral principles cannot be applied to particular moral situations because each moral situation is different. Thus, sweeping moral judgements hold no value. Nietzsche considers it selfish or cowardly to hold others to your own moral judgements.
 
+>"You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist.”
+
 #### The Will to Power
 
 **The Will to Power** is a fundamental drive to overcome opposition, and this drive is at the core of all activity. Opposition both in other people, and inside ourselves. The greatest way to test one’s strength is to seek out a worthy adversary. The essence of life which imbues the strong with the aim of extending its power even at great risk to itself. “The essence of life as Will to Power is to seek its own glorious undoing, by pushing itself to, and beyond, its limits.” -Hank Southgate. The will to Power is a meta-drive which influences all of our particular drives, i.e. for knowledge, artistry, military exploits, sexual, social, or economic success, etc.
 
+>“That which does not kill us makes us stronger.”
+
 Contrary to the Darwinian idea that life is merely about survival, Nietzsche observes that in reality, this is rarely how organisms behave. An organism which is merely subsisting is one we take to be weak or sick--not how life should be. On the other hand, the organism which is strong, ever-growing, and ambitious is understood to be in good health, good at living. As we are all organisms, it follows that the best way to live is to do so vigorously, to grow, to expand our capabilities. This is the meaning of the positive Will to Power, it is “precisely the will of life”. Nietzsche thinks that the basis for the Will to Power is much stronger than the basis of morality. It is grounded in observable characteristics common to all living things.
 
-Self-creation, and overcoming require different things from different people. Two people may act in total contradiction with the will of each other, and still be satisfying their individual wills to power. Rather than holding people to a certain set of actions, it holds them to a more abstract idea, which may be expressed through many different sets of actions.At first this seems like a strange thing to hear out of Nietzsche, a little while ago he was bitching out Christianity for its bad values, but there’s an important delineation to be made here. Power and values are on entirely different levels.
+Self-creation, and overcoming require different things from different people. Two people may act in total contradiction with the will of each other, and still be satisfying their individual Wills to Power. Rather than holding people to a certain set of actions, it holds them to a more abstract idea, which may be expressed through many different sets of actions. At first this seems like a strange thing to hear out of Nietzsche, a few paragraphs ago he was bitching out Christianity for its bad values, but there’s an important delineation to be made here. Power and values are on entirely different levels. Power is objectively and observably good, it's expressed in the vitality, health, and strength of living things. Values are subjective and individualized
 
 Nietzsche is not advocating a view like Aristotle on which you have some predetermined essence you have to realize. Rather, in a slightly [Sartrean](https://plato.stanford.edu/entries/sartre/) spirit, everything you do (your successes, failures, desires, hates...) all play a part in defining who you are. The self is a changing thing, wish is not just something you possess, but something you achieve through discipline and control and self-mastery. The will to power is primarily self-directed rather than directed towards others.
 
@@ -67,10 +75,11 @@ The life of the artist is filled with self-control, self-creation and interpreta
 
 Nietzsche really doesn’t want to tell us how to act specifically, but he does believe we should adhere to a certain lifestyle:
 
-- Self-discipline in the service of Will to Power: foster drives which lead to achievement, and through this exercise of overcoming obstacles and expressing ourselves, we flourish and grow our power.
+- Self-discipline in the service of the Will to Power: foster drives which lead to achievement, and through this exercise of overcoming obstacles and expressing ourselves, we flourish and grow our power.
 - Playing with values creatively: free spirits are free because they are not bound to any particular set of values or practices. Those are just different interpretations of existence, none of which are especially right or natural.
 
 >“..we delight in all who, like us, love danger, war, adventure, who do not allow themselves to compromise, to be caught, placated, gelded...”
+
 >“Live at war with your fellows and yourselves!”
 
 What is most important is satisfaction with oneself. If one is to hold themself together, a positive self-image is essential. Dissatisfaction with oneself is associated with a sick form of existence, in which one is weak and resents themselves and those better than them. This kind of person is the kind who lifts up religion, condemning those achievers who create their own values and exert their own wills.

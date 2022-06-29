@@ -14,6 +14,10 @@ You use the RSA encryption scheme every day. It's simple enough to understand, b
 
 To identify the requirements for a conscious machine, I believe we ought to look beyond mechanical scientific accounts of what makes a human human. Using a phenomenological approach to this subject, we stand to better express what is necessary for a true, human-level artificial consciousness.
 
+## The Will to Power
+
+Friedrich Nietzsche is one of the most significant philosophers of all time. Here we discuss Nietzsche's envigorating and liberating philosophy for living.
+
 ## A Theory on Dharma
 
 Who are you meant to be? Is that who you are? How can you become that person? We discuss an actionable guide to answering these questions, which is based on the teachings of the Bhagavad Gita.

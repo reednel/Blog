@@ -1,8 +1,12 @@
 ---
-layout: post
-author: Reed Nelson
 title: "Topics in Language and Meaning"
+slug: "/language"
+date: 2021-04-04
+description: none
+tags:
+  - Philosophy
 ---
+
 
 ## Introduction
 

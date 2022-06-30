@@ -1,8 +1,12 @@
 ---
-layout: post
-author: Reed Nelson
-title: "Diffie Hellman" # Title in progress 
+title:  "Diffie Hellman"
+slug: "/dh"
+date: 2022-07-10
+description: none
+tags:
+  - Cryptography
 ---
+
 
 ## Overview
 

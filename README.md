@@ -1,6 +1,10 @@
 # Blog
 
-This repository contains all of the posts to [my blog](https://pages.cs.wisc.edu/~rnelson/blog). Some also appear on the [UPL blog](https://www.upl.cs.wisc.edu/blog.html).
+This repository contains all of the posts to [my blog](https://pages.cs.wisc.edu/~rnelson/blog). Some also appear on the [UPL blog](https://www.upl.cs.wisc.edu/blog.html). Some of this content may be a work in progress.
+
+## Diffie-Hellman
+
+none
 
 ## Huffman Data Compression
 
@@ -17,6 +21,14 @@ To identify the requirements for a conscious machine, I believe we ought to look
 ## The Will to Power
 
 Friedrich Nietzsche is one of the most significant philosophers of all time. Here we discuss Nietzsche's envigorating and liberating philosophy for living.
+
+## De Bruijn Sequences
+
+none
+
+## Language and Meaning
+
+none
 
 ## A Theory on Dharma
 

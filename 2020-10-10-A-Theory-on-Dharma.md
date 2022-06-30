@@ -16,17 +16,15 @@ There’s a lot of murkiness around the concept of dharma because it has such a 
 
 Each person’s dharma is unique to them. Plumber Claire and Plumber Dave may both have found their place, fulfilled in their trade, but dharma is wholly personalized. The personal idiosyncrasies make all the difference. Nobody else can be you, and you will not be satisfied if you try to be anyone else. The thought is that every base will be covered if everyone acts on their calling[^2]. As in, you wouldn't run into issues where nobody's dharma is to be a physician, or a firefighter.
 
-One cannot get a new dharma, but a dharma can change over time. Perhaps the firefighter finds a new calling in bartending.
-
-Some believe that everyone’s greatest responsibility in life is to their dharma, to embody it completely. We are happy and prosperous when we are on the right path.
+One cannot get a new dharma, but a dharma can change over time. Perhaps the firefighter finds a new calling in bartending. Furthermore, one's greatest responsibility in life is to their dharma, to embody it completely. We are happy and prosperous when we are on the right path.
 
 Speaking of the *right path*, your dharma is predetermined, it’s a path set for your soul by universal laws. It’s not that your dharma is defined to be what will most fulfill you, but conversely, what will most fulfill you will be your dharma. If you find this point particularly disagreeable, perhaps keep it in your mind but don’t get hung up on it.
 
 ## Finding Yours
 
-A consequence of this fixes path is that you can’t be whatever you want. That doesn’t sound as nice as the more conventional idea in America that you *can* be whatever you want, but perhaps it is more honest.
+A consequence of this fixed path is that you can’t be whatever you want. That doesn’t sound as nice as the more conventional idea in America that you *can* be whatever you want, but perhaps it is more accurate.
 
-Many make the mistake of thinking that to live their dharma they need to make some radical changes to their life--to drop everything and move to France to paint. But actually, most people are already living *close to* their dharma. But dharma is neither Horseshoes nor hand grenades. To live close to your dharma but not *in it* is to lack the sense of purpose altogether.
+Many make the mistake of thinking that to live their dharma they need to make some radical changes to their life--to drop everything and move to France to paint. But actually, most people are already living *close to* their dharma. Alas, dharma is neither Horseshoes nor hand grenades. To live close to your dharma but not *in it* is to lack the sense of purpose altogether.
 
 Magnitude is another dimension of dharma: you must not aim too high or too low. Aim too high, and you’ll never find satisfaction and feel like a failure. We can't all be olympians in our favorite sport. Aim too low, and you won’t be living up to your potential. Comparing oneself to others is a recipe for failure. To reiterate, your dharma is yours alone.
 
@@ -70,4 +68,4 @@ It’s better to fail at one's own dharma than to succeed at another’s. Do not
 
 [^4]: *Expert Performance: Its Structure and Acquisition* (1994); Ericsson, Charness; [[Article]](https://www.researchgate.net/publication/232519120_Expert_Performance_Its_Structure_and_Acquisition).
 
-[^5]: This sounds like Nietzsche's saying: "become who you are". As it happens, I wrote [a post](./blog/power) discussing Nietzche's philosophy for living.
+[^5]: This sounds like Nietzsche's saying: "become who you are". As it happens, I wrote [a post](./blog/power) related to this idea, discussing Nietzche's philosophy for living.

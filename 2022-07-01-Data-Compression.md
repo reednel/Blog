@@ -8,7 +8,7 @@ title: "Huffman Data Compression"
 
 **Data compression** is a process of modifying the representation of some information so that it can be stored using less data. Storing and transmitting data is expensive in large quantities, making an optimal compression (one which minimizes storage size) extremely valuable. In this post we will learn how to quantify data information-theoretically[^1], and how to get an optimal compression with optimal speed.
 
-The ratio of concepts and definitions to prose is pretty high in this post. I try to ameliorate that with examples and alternate descriptions, but the information is still dense. Assuming a bit of familiarity with binary and ASCII, nothing here should be too dificult to understand in broad strokes.
+The ratio of concepts and definitions to prose is pretty high in this post, but I try to ameliorate that with examples and alternate descriptions. Assuming a bit of familiarity with binary and ASCII, nothing here should be too dificult to understand. It's okay to skim over some of the equations, there won't be a test at the end.
 
 ## Entropy: Quantifying Information
 
@@ -30,31 +30,29 @@ Already you might see that this is suboptimal. With 5 bits, you can represent as
 
 ## Coding
 
-Let's formalize this term "coding":
+A **coding** $C$ of $\Omega$ is a unique mapping between the elements of $\Omega$ and a set of binary strings. The mapping $A = 00000, B = 00001, ..., Z = 11001$ from before is an example of a coding.
 
-A **coding** $C$ of $\Omega$ is a unique mapping between the elements of $\Omega$ and a set of binary strings. The mapping $A = 00000, B = 00001, ..., Z = 11001$ is an example of a coding.
-
-A **prefix code** is a coding where no coded character is a prefix of another character. For example, a coding with $A = 01, B = 010$ is not a prefix code, because $C(B)$ begins with $C(A)$. If we aren't using fixed-length codings, it's important to use a prefix code so there isn't ambiguity about where one character ends and another begins.
+A **prefix code** is a coding where no coded character is a prefix of another character. For example, a coding with $A = 01, B = 010$ is *not* a prefix code, because $C(B)$ begins with $C(A)$. If we aren't using fixed-length codings, it's important to use a prefix code so there isn't ambiguity about where one character ends and another begins.
 
 Whether a coding will be good or bad at compression depends on its expected length. The **expected length** $L$ of a code is the sum of the probabilities $p$ of each character ocurring, multiplied by the length $\ell$ of that character's code. That is, $L(C) = \sum\limits_{x \in \Omega}p(x) \cdot \ell(x)$. Practically, this means that on average we expect a message $n$ characters long (using this coding) to take up $n \times L(C)$ bits.
 
-Of course, the goal of compression is to use a coding of minimal expected length. It is essential to this project that language is not uniform. When speaking English, $A$ doesn't appear with the same frequence as $Z$. In fact, $A$ makes up about $8\%$ of all letters we write, but $Z$ makes up a mere $0.07\%$[^2]. Intuitively, we want our code to reserve the shortest bit strings for the most common letters, like $A$ and $E$, and assign the longer codings to the rare characters, like $Z$ and $Q$. To reiterate, the higher the entropy in a set of characters, the more compressible it is.
+Of course, the goal of compression is to use a coding of minimal expected length. It is essential to this project that language is not uniform (recall, greater entropy means greater compressability!). In English for example, $A$ doesn't appear with the same frequence as $Z$. $A$ makes up about $8\%$ of all letters we write, but $Z$ makes up a mere $0.07\%$[^2]. Intuitively, we want our code to reserve the shortest bit strings for the most common letters, like $A$ and $E$, and assign the longer codings to the rare characters, like $Z$ and $Q$. To reiterate, the higher the entropy in a set of characters, the more compressible it is.
 
 There is a theorem that states that there exists an optimal prefix code $C$, such that the expected length of $C$ is equal to or only a tiny bit larger than the entropy of the corresponding probability distribution. That is, $H(P) \leq L(C) < H(P) + \epsilon$.
 
 ## Huffman Coding
 
-In the 50's, MIT PhD student David Huffman had to write a paper proving some coding was optimal. He couldn't figure it out, but instead he thought up his own method[^3] and proved that coding was optimal. Huffman's professor [Robert Fano](https://en.wikipedia.org/wiki/Robert_Fano) had previously devised a coding algorithm with[^4] Claude Shannon himself, so when his student showed him a better algorithm, Fano supposedly[^5] canceled class for the rest of the term. Just a bit of culture for you. In essence, this is the Huffman Coding:
+In the 50's, MIT PhD student David Huffman had to write a paper proving some coding was optimal. He couldn't figure it out, but extraodinarily, he thought up his own algorithm[^3] and proved that coding was optimal. Huffman's professor [Robert Fano](https://en.wikipedia.org/wiki/Robert_Fano) had previously devised a coding algorithm with[^4] Claude Shannon himself, so when his *student* showed him a better algorithm, Fano supposedly[^5] canceled class for the rest of the term. In essence, this is the Huffman Coding:
 
-0. Start with the system $\Omega = x_1, x_2,..., x_n$, and $p = $ the probability function.
+1. Start with the system $\Omega = x_1, x_2,..., x_n$, and $p = $ the probability function.
 
-1. Take $x_i, x_j$ of lowest probability in $\Omega$.
+2. Take $x_i, x_j$ of lowest probability in $\Omega$.
 
-2. Remove $x_i$ and $x_j$ from $\Omega$, and add to $\Omega$ a new character $\chi$, where $p(\chi) = p(x_i) + p(x_j)$.
+3. Remove $x_i$ and $x_j$ from $\Omega$, and add to $\Omega$ a new character $\chi$, where $p(\chi) = p(x_i) + p(x_j)$.
 
-3. Repeat (1) and (2) until only 1 element remains in $\Omega$.
+4. Repeat (1) and (2) until only 1 element remains in $\Omega$.
 
-4. Build a binary tree for which all the leaves are the original members of $\Omega$, and two nodes share a parent if they were replaced by that parent in step (2).
+5. Build a binary tree for which all the leaves are the original members of $\Omega$, and two nodes share a parent if they were replaced by that parent in step (2).
 
 [Visualization of the Huffman Coding algorithm](huffman.jpg)
 

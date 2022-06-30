@@ -4,7 +4,6 @@ author: Reed Nelson
 title: "RSA Encryption"
 ---
 
-
 ## Overview
 
 Encryption is all about encoding information with the end of limiting (meaningful) access to it. Usually when we're talking about encryption/decryption, it's in the context of an outgoing/incoming message. You use encryption dozens or hundreds of times a day without ever having to think about it. Every credit card swipe, every iMessage, every HTTPS visit, and every packet sent to your wireless headphones is encrypted. Anyone intercepting your data while it's in motion is only reading garbage (so long as they can't decrypt it).

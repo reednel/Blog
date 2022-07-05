@@ -15,11 +15,11 @@ In this post we will define what a de Bruijn sequence is, and explore some of th
 
 ## Properties
 
-#### Definition and Notation
+### Definition and Notation
 
 Let $A$ be an alphabet of $k$ distinct characters[^2]. A **de Bruijn sequence** is a cyclic string of characters from $A$ where each permutation of $n$ characters appears exactly once. $B(k,n)$ will be used to denote the set of de Bruijn sequences of window length $n$ and alphabet length $k$.
 
-#### Basic Properties
+### Basic Properties
 
 **Property 1:** The length of a $B(k,n)$ sequence is $k^n$.
 
@@ -27,7 +27,7 @@ Let $A$ be an alphabet of $k$ distinct characters[^2]. A **de Bruijn sequence** 
 
 **Property 2:** The number of distinct $B(k,n)$ sequences equals $\frac{(k!)^{k^{n-1}}}{k^{n}}$. (Because de Bruijn sequences are cyclic, we consider mere rotations of one sequence to be the same, non-distinct, sequence.) For example, B(2,3)[^3] has 2 distinct sequences, 8 characters in length: $00010111$, and $11101000$.
 
-#### De Bruijn Graphs
+### De Bruijn Graphs
 
 Each $B(k,n)$ has a corresponding de Bruijn graph. The example in Figure 1 shows the graph for $B(2,3)$.
 
@@ -55,7 +55,7 @@ Each $B(k,n)$ has a corresponding de Bruijn graph. The example in Figure 1 shows
 
 The following method will generate all de Bruijn sequences of $B(k,n)$ for given values of $k$ and $n$ in two parts: first, generate the corresponding de Bruijn graph; second, traverse through it in all ways which visit each edge exactly once.
 
-#### Constructing the Graph
+### Constructing the Graph
 
 The $B(k,n)$ graph will be represented by an adjacency matrix[^4]. The data structure of choice will be a 2-dimensional array $A_{ij}$, for $0\leq i,j \leq k^{n-1}$. This choice gives a space complexity of $O(k^{2n-2})$, which is generally unideal for sparse graphs, however we should expect time complexity to be a vastly larger bottleneck for most values of n and k. This choice gives a time complexity for accessing any element of the matrix of O(1).
 
@@ -63,7 +63,7 @@ Each vertex (a value in base-k) corresponds to the index of that value in decima
 
 ![$B(2,3)$ Adjacency Matrix](b23_adjmatrix.png)
 
-#### Traversing the Graph
+### Traversing the Graph
 
 From properties 7 and 8, we conclude that finding all B(k,n) sequences is equivalent to finding all distinct traversals of the B(k,n) graph which visit each edge once. This will be implemented by recursively traversing through the graph and identifying all traversals which meet that criterion, similar to a depth-first search. Each time a vertex is reached, there are two cases to consider:
 
@@ -72,7 +72,7 @@ From properties 7 and 8, we conclude that finding all B(k,n) sequences is equiva
 
 This algorithm terminates when all paths in the graph have been traversed. Implementation involves the use of some additional data structures. A $k^{n-1} \times k^{n-1}$ boolean matrix can be used to keep track of whether an edge has yet been traversed, allowing for $O(1)$ access. Something in the form of a stack data structure ought to be used to store the values of the edges which have been traversed, as this allows for $O(1)$ pushing to and popping from the list.
 
-#### Additional Notes
+### Additional Notes
 
 A Java implementation of an algorithm of this form is provided by myself, along with a suite of other tools pertaining to de Bruijn sequences and graphs. This code and select output files from the generating function can be found [here](github.com/reednel/DeBruijn).
 
@@ -80,7 +80,7 @@ In practice, it’s biggest bottleneck is neither time nor space complexity (in 
 
 ## Shuffling of Binary Sequences
 
-#### Shuffling
+### Shuffling
 
 This extra work explores special binary de Bruijn sequences which have the property that after undergoing a perfect shuffle, they retain their original order. For brevity, we will say a binary de Bruijn sequence **shuffles** if and only if it has this property. Furthermore, in this section, perfect shuffle[^5] refers to a perfect *in-shuffle* or perfect *out-shuffle*.
 
@@ -100,13 +100,13 @@ $i \to 2i-n+1, \text{ for } \frac{n}{2} \leq i < n$
 For example, take a sequence to be of length 10. An out-shuffle reorders it’s indices as follows: $\\$
 $\underline{01234}56789 \to \underline{0}5\underline{1}6\underline{2}7\underline{3}8\underline{4}9$
 
-#### Properties
+### Properties
 
 **Property 9:** For a given n, it’s not true that all $B(2,n)$ sequences shuffle.[^6]
 
 **Property 10:** Of sequences that shuffle, only certain rotations do.
 
-#### Algorithms
+### Algorithms
 
 I have written a suite of tools to identify $B(2,n)$ sequence that shuffle. For the reason that these algorithms are simpler and less interesting than the generating algorithm provided in the paper, they are left out here. Similar to the generating algorithm, the Java code for these tools can be found on github.com/reednel/DeBruijn. Below are some results from a function which checks each rotation of each sequence provided by the generator, and returns those which out-shuffle.
 

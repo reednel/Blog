@@ -20,48 +20,48 @@ A **sign** is a proper name which refers to a definite object.
 A **sense** is the mode of presentation of a sign. For every sense there is at most 1 referent, a term may have a sense but no referent.
 A **referent** is the thing a sign refers to.
 
-Ex. “Venus” and “the second planet from the sun” are two different senses which share a referent. So do “Venus” and “the second planet from the sun” have the same meaning? Consider this: does “venus is venus” have the same meaning as “venus is the second planet from the sun”?
+For example, “Venus” and “the second planet from the sun” are two different senses which share a referent.
 
-Question: what is the meaning of “the King of France is bald”?
+Intuitively, the referent seems like the important part of the sense/referent pair, i.e. the one with all the meaning. If that is true, then “Venus” and “the second planet from the sun” have the same meaning. And if two statements have the same meaning, it seems like they should be completely interchangable in a sentence. Now consider this: does “Venus is Venus” have the same meaning as “Venus is the second planet from the sun”? Certainly not! The former is a tautology, but the latter tells you something about Venus that you might not have known. In this case we have two senses for the same referent, but these senses aren't merely pointers, they seem to (have the potential to) mean more than just the thing they concretely refer to.
 
-Frege would say that because there is no real world present king of France, the sentence has no truth value. Likewise, he will say ”Harry Potter is a Wizard” is not truth-apt because as far as the real world is concerned, there is no Harry Potter who could be a wizard.
+Question: what is the meaning of “the King of France is bald”? Frege would say that because there is no real world present king of France, the sentence has no truth value. Likewise, he will say "Harry Potter is a Wizard” is not truth-apt because as far as the real world is concerned, there is no Harry Potter who could be a wizard.
 
-### Presuppositions (Galen Strawson)
+Some of what Frege has to say does seem a bit simplistic and incorrect, but he was one of the earliest thinkers to study the philosophy of language as it's understood today.
 
-Strawson didn’t use the term "presupposition", but he’s thought to have originally come up with this linguistic phenomenon.
-A term or phrase **presupposes** that P if it doesn’t directly state that P, but in some sense the speakers using the term takes for granted that P. We might say “the king of France is bald” implies that there is a king of France. Similarly, replying “no” to “have you quit smoking?” seems to imply that you are still a smoker, even if you’ve never smoked
+### Presuppositions (Galen Strawson) [FIT ELSEWHERE??? KINDA BREAKS FLOW]
+
+Strawson didn’t use the term "presupposition", but he’s thought to have originally come up with this linguistic phenomenon. A term or phrase **presupposes** that $P$ if it doesn’t directly state that $P$, but in some sense the speakers using the term takes for granted that $P$. We might say “the king of France is bald” implies that there is a king of France. Similarly, replying “no” to “have you quit smoking?” seems to imply that you are still a smoker, even if you’ve never smoked.
 
 ## Proper Names
 
-A **proper name** is a name used for an individual person, place, or organization, i.e. George Washington, Venus, The Lord of the Rings. Non example: the first president of the United States.
-Note distinction between analytic and synthetic truths: analytic if the fact that it’s true follows from the meaning of the terms, synthetic if not. (Bachelors are unmarried men vs Karl is a bachelor)
-An argument that names have meaning beyond what they refer to:
+A **proper name** is a name used for an individual person, place, or organization, i.e. George Washington, Venus, The Lord of the Rings. A non example would be: the first president of the United States.
 
-1. If the meaning of a name is just the thing it refers to, then two names that refer to the same thing have the same meaning.
+We call a truth **analytic** if the fact that it’s true follows from the meaning of the terms, and we call it **synthetic** if not. To use the classic example, the sentence "bachelors are unmarried men" is analytic, this is what it means to be a bachelor. The sentence "Karl is a bachelor" is synthetic. Karl could be married or unmarried, you'd have to know more about him to say. This distinction first discussed by Kant captures something similar to the *a priori*/*a posteriori* distinction, but isn't quite the same.
 
-2. If two names that refer to the same thing have the same meaning, then whenever a and b are two names that refer to the same thing, a = b is analytic.
+Consider this argument that names have meaning beyond what they refer to:
 
-3. It is false that whenever a and b are two names that refer to the same thing, a = b is analytic.
-
-4. Therefore, the meaning of a name is not just the thing to which it refers.
+1. If the meaning of a name is *just* the thing it refers to, then two names that refer to the same thing have the same meaning.
+2. If two names that refer to the same thing have the same meaning, then whenever $a$ and $b$ are two names that refer to the same thing, $a = b$ is analytic. (We made this assumption earlier when discussing Frege).
+3. It is false that whenever $a$ and $b$ are two names that refer to the same thing, $a = b$ is analytic.
+4. Therefore, the meaning of a name is not just the thing it refers to.
 
 ### Proper Names (John Searle)
 
-Frege, Russell and Searle all subscribe to some form of **description theory**: that the meaning of a name is not just what it refers to. But where Frege and Russell think there is a single property or set of properties which give a name its meaning, Searle argues for a cluster theory of proper names.
+Frege, Bertrand Russell, and Searle all subscribe to some form of **description theory**: that the meaning of a name is *not* just what it refers to. Rather, a name is synonymous with a description or cluster of descriptions. In Frege and Russell's case, they think there is a single property or set of properties which give a name its meaning, but Searle argues for a slightly different theory. [SHOULD SAY MORE ABOUT F&R'S IDEA...]
 
-Searle’s objection: suppose “Aristotle” and “the teacher of Alexander” have the same meaning. Then that identity is analytic, but clearly it’s synthetic, it could have been that Aristotle never taught Alexander, and it seems like Aristotle would still be Aristotle.
+Searle’s objection to Frege and Russell is this: suppose “Aristotle” and “the teacher of Alexander” have the same meaning. Then that identity is analytic. But clearly it’s synthetic! It could have been that Aristotle never taught Alexander, and it seems like Aristotle would still be Aristotle. That is, there's more to our understanding of Aristotle that merely that he taught Alexander.
 
-The **cluster theory of proper names**: the meaning of a name is a cluster of the properties commonly associated with it. If a thing in the world has a sufficient number of the properties associated with a name, then that thing in the world is the referent of the name.
+The **cluster theory of proper names** states that the meaning of a name is a cluster of the properties commonly associated with it. If a thing in the world has a sufficient number of the properties associated with a name, then that thing in the world is the referent of the name.
 
-We can list out some properties of Aristotle: student of Plato; teacher of Al; author of Nicomachean Ethics; author of the Prior Analytics; the greatest philosopher born in Stagira… There is no single property P such that “Aristotle is P” is analytic, and if Aristotle didn’t have one of these properties, we wouldn’t say Aristotle didn’t exist, we’d say oh, Aristotle wasn’t born in Stagira. But if there was no such person with all of these properties, we would say “Aristotle didn’t exist”
+We can list out some properties of Aristotle: student of Plato; teacher of Al; author of Nicomachean Ethics; author of the Prior Analytics; the greatest philosopher born in Stagira… There is no single property $P$ such that “Aristotle is $P$” is analytic, and if Aristotle didn’t have one of these properties, we wouldn’t say Aristotle didn’t exist, we’d say oh, Aristotle wasn’t born in Stagira. If it turned out that there was no such person with most of these properties, only then would say that Aristotle didn’t exist.
+
+Saul Kripke has a bone to pick with the Cluster theory. He points out that a speaker can refer to something even if they don’t know any uniquely identifying propertied of that thing. i.e. you might recognise that Feynman and Maxwell were physicists but know nothing else about them. This is a problem if you believe that a name is synonymous with a group of descriptions, because that account would make it seem like you think Feynman and Maxwell are two names for the same person.
+
+A possible response to this might be to say the name is part of the description, but then there’s this weird sort of circular thing going on…
 
 ### Naming and Necessity (Saul Kripke)
 
-Kripke diverges from Frege, Russell, and Searle and their descriptivist theory of meaning, where a name is synonymous with a description or cluster of descriptions. Instead Kripke opts for a theory of reference, which is just a theory of how a term gets its referent. A motivating example for this is the Paris meter stick. Back in 1875, some scientists decided to make a perfect meter stick out of platinum and iridium, which officially defined the meter. But I guess some atoms were still falling off or something, so in 1960 they redefined it as some number of wavelengths of something, and then changed it again in the 80s to be something about light in a vacuum… Anyway, the idea is supposed to be that a meter is just a meter--it seems like we don’t want to change our concept just because some “official” stick is its technical definition.
-
-Kind of a knock against Searle’s cluster theory: a speaker can refer to something even if they don’t know any uniquely identifying propertied of that thing. i.e. you might recognise that Feynman and Maxwell were physicists but know nothing else about them. This is a problem if you believe that a name is synonymous with a group of descriptions, because that account would make it seem like you think Feynman and Maxwell are two names for the same person.
-
-A response to this might be to say the name is part of the description, but then there’s this weird sort of circular thing going on…
+Kripke diverges the descriptivists, instead opting for a *theory of reference*, which is just a theory of how a term gets its referent. A motivating example for this is the Paris meter stick. Back in 1875, some scientists made a perfect meter stick out of platinum and iridium, which officially defined the meter. But despite their carefully chosen alloy, some atoms were still falling off or something. So then in 1960 they redefined the meter as some number of wavelengths of something, and then in the 80s it was redefined again to be something about light in a vacuum. Anyway, the idea is supposed to be that a meter is just a meter. It seems like we don’t want to change our concept just because some “official” stick is its technical definition.
 
 A **rigid designator** is a term or phrase that designates the same object in all possible worlds. This doesn’t mean that the term couldn’t have had a different meaning. Rather, it means that given the meaning the term has, it designates the same object with respect to all possible circumstances.
 
@@ -71,6 +71,7 @@ Kripke’s positive account of how a reference is determined is called a **causa
 
 ## Propositional Attitudes
 
+We'll shift gears now, into a slightly more epistemic topic.
 **The Principle of Translation**: “If a sentence of one language expresses a truth in that language, then any translation of it into any other language also expresses a truth (in that other language)".
 
 ### A Puzzle About Belief (Saul Kripke)

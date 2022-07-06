@@ -14,7 +14,7 @@ This post is sort of a crash course on some of the introductory topics in the Ph
 
 ## Descriptions and Reference
 
-### Sense and Reference (Gottlob Frege)
+### [Sense and Reference](http://www.scu.edu.tw/philos/98class/Peng/05.pdf) ([Gottlob Frege](https://plato.stanford.edu/entries/frege/))
 
 A **sign** is a proper name which refers to a definite object.
 A **sense** is the mode of presentation of a sign. For every sense there is at most 1 referent, a term may have a sense but no referent.
@@ -28,7 +28,7 @@ Question: what is the meaning of “the King of France is bald”? Frege would s
 
 Some of what Frege has to say does seem a bit simplistic and incorrect, but he was one of the earliest thinkers to study the philosophy of language as it's understood today.
 
-### Presuppositions (Galen Strawson) [FIT ELSEWHERE??? KINDA BREAKS FLOW]
+### Presuppositions ([Galen Strawson](https://en.wikipedia.org/wiki/Galen_Strawson)) [FIT ELSEWHERE??? KINDA BREAKS FLOW]
 
 Strawson didn’t use the term "presupposition", but he’s thought to have originally come up with this linguistic phenomenon. A term or phrase **presupposes** that $P$ if it doesn’t directly state that $P$, but in some sense the speakers using the term takes for granted that $P$. We might say “the king of France is bald” implies that there is a king of France. Similarly, replying “no” to “have you quit smoking?” seems to imply that you are still a smoker, even if you’ve never smoked.
 
@@ -45,11 +45,11 @@ Consider this argument that names have meaning beyond what they refer to:
 3. It is false that whenever $a$ and $b$ are two names that refer to the same thing, $a = b$ is analytic.
 4. Therefore, the meaning of a name is not just the thing it refers to.
 
-### Proper Names (John Searle)
+### [Proper Names](http://michaeljohnsonphilosophy.com/wp-content/uploads/2015/08/John-Searle-Proper-Names.pdf) ([John Searle](https://en.wikipedia.org/wiki/John_Searle))
 
-Frege, Bertrand Russell, and Searle all subscribe to some form of **description theory**: that the meaning of a name is *not* just what it refers to. Rather, a name is synonymous with a description or cluster of descriptions. In Frege and Russell's case, they think there is a single property or set of properties which give a name its meaning, but Searle argues for a slightly different theory. [SHOULD SAY MORE ABOUT F&R'S IDEA...]
+Frege, [Bertrand Russell](https://plato.stanford.edu/entries/russell/), and Searle all subscribe to some form of **description theory**: that the meaning of a name is *not* just what it refers to. Rather, a name is synonymous with a description or cluster of descriptions. In Frege and Russell's case, they think there is a single property or set of properties which give a name its meaning, but Searle argues for a slightly different theory. [SHOULD SAY MORE ABOUT F&R'S IDEA...]
 
-Searle’s objection to Frege and Russell is this: suppose “Aristotle” and “the teacher of Alexander” have the same meaning. Then that identity is analytic. But clearly it’s synthetic! It could have been that Aristotle never taught Alexander, and it seems like Aristotle would still be Aristotle. That is, there's more to our understanding of Aristotle that merely that he taught Alexander.
+Searle's problem with Frege and Russell is this: suppose “Aristotle” and “the teacher of Alexander” have the same meaning. Then that identity is analytic. But clearly it’s synthetic! It could have been that Aristotle never taught Alexander, and it seems like Aristotle would still be Aristotle. That is, there's more to our understanding of Aristotle that merely that he taught Alexander.
 
 The **cluster theory of proper names** states that the meaning of a name is a cluster of the properties commonly associated with it. If a thing in the world has a sufficient number of the properties associated with a name, then that thing in the world is the referent of the name.
 
@@ -59,108 +59,108 @@ Saul Kripke has a bone to pick with the Cluster theory. He points out that a spe
 
 A possible response to this might be to say the name is part of the description, but then there’s this weird sort of circular thing going on…
 
-### Naming and Necessity (Saul Kripke)
+### [Naming and Necessity](http://people.exeter.ac.uk/sp344/naming_and_necessityocr.pdf) ([Saul Kripke](https://en.wikipedia.org/wiki/Saul_Kripke))
 
-Kripke diverges the descriptivists, instead opting for a *theory of reference*, which is just a theory of how a term gets its referent. A motivating example for this is the Paris meter stick. Back in 1875, some scientists made a perfect meter stick out of platinum and iridium, which officially defined the meter. But despite their carefully chosen alloy, some atoms were still falling off or something. So then in 1960 they redefined the meter as some number of wavelengths of something, and then in the 80s it was redefined again to be something about light in a vacuum. Anyway, the idea is supposed to be that a meter is just a meter. It seems like we don’t want to change our concept just because some “official” stick is its technical definition.
+Kripke diverges the descriptivists, instead opting for a *theory of reference* (which is just a theory of how a term gets its referent). A motivating example for this is the Paris meter stick. Back in 1875, some scientists made a perfect meter stick out of platinum and iridium, which officially defined the meter. But despite the care they took in their choice of alloy, some atoms were still falling off or something, and the stick was very slowly getting shorter. So then in 1960 they redefined the meter as some number of wavelengths of something, and then in the 80s it was redefined again to be the distance traveled by light in a vacuum in $\frac{1}{299,792,458}$ of a second[^1]. Anyway, the idea is supposed to be that a meter is just a meter. It seems like we don’t want to change our concept just because some “official” stick is its technical definition.
 
-A **rigid designator** is a term or phrase that designates the same object in all possible worlds. This doesn’t mean that the term couldn’t have had a different meaning. Rather, it means that given the meaning the term has, it designates the same object with respect to all possible circumstances.
-
-Kripke argues that unlike descriptions, names are rigid designators… We can imagine a counterfactual situation in which someone else was the first president of the US, but it doesn’t really make sense to say someone else could’ve been George Washigton.
+A **rigid designator** is a term or phrase that designates the same object in all possible worlds. This doesn’t mean that the term couldn’t have had a different meaning. Rather, it means that given the meaning the term has, it designates the same object with respect to all possible circumstances. Kripke argues that unlike descriptions, names are rigid designators. We can imagine a counterfactual situation in which someone else was the first president of the US, but it doesn’t really make sense to say someone else could’ve been George Washigton.
 
 Kripke’s positive account of how a reference is determined is called a **causal view of reference**, which states that at some point, a name gets assigned to an object, and then that name just refers to the object, so, the reference isn’t mediated by description. From then on, the name gets passed from speaker to speaker, and we can trace a causal chain from our use of a word back to its origin.
 
 ## Propositional Attitudes
 
-We'll shift gears now, into a slightly more epistemic topic.
-**The Principle of Translation**: “If a sentence of one language expresses a truth in that language, then any translation of it into any other language also expresses a truth (in that other language)".
+We'll shift gears now, into a bit more of an epistemological topic. Consider **the Principle of Translation**: “If a sentence of one language expresses a truth in that language, then any translation of it into any other language also expresses a truth (in that other language)". This seems like a pretty reasonable idea, but Kripke will reveal a problem.
 
-### A Puzzle About Belief (Saul Kripke)
+### [A Puzzle About Belief](https://www.uvm.edu/~lderosse/courses/lang/Kripke(1979).pdf) ([Saul Kripke](https://en.wikipedia.org/wiki/Saul_Kripke))
 
-French boy (Pierre) grows up speaking only Frenc. He reads about the city “Londres” (London), and develops the belief that “Londres est jolie” (“London is pretty”). He moves to London, learns English, and develops the belief that “London is not pretty”.
+In France there is a French boy, Pierre, who grows up speaking only French. As a child, he reads about the city “Londres” (London), and develops the belief that “Londres est jolie” (“London is pretty”). Pierre moves to London, learns English, and through personal experience, develops the belief that “London is not pretty”. So if, in the present, you asked Pierre "Is London pretty?", he would report "No, London is not pretty". However if you asked him "Est-ce que Londres est jolie?" ("Is London Pretty?"), he would reply "Oui, Londres est jolie". So the puzzle is, does Pierre believe that London is pretty? And does he believe that London is *not* pretty? There are 4 permutations, each with different implications.
 
-Does Pierre believe that London is pretty? Does Pierre believe that London is not pretty?
+1. Pierre **believes** that London is pretty and **believes** that London is not pretty.
+The glaring problem with this option is that it implies Pierre believes a contradiction, but we can assume Pierre is a rational guy who would not wittingly believe two conflicting thoughts.
 
-[4 permutations]
+2. Pierre **believes** that London is pretty and **does not believe** that London is not pretty.
+If we take this to be the case, then we're ignoring Pierre's experience-based report in english that "London is not pretty", and that seems plainly wrong.
 
-### Quantifiers and Propositional Attitudes (W. V. O. Quine)
+3. Pierre **does not believe** that London is pretty and **believes** that London is not pretty.
+For this case to be correct, you have to disconnect Lundres from Pierre's childhood book, from London, the real city. The issue here is we're implying that the city discussed in the book does not map to the real city, even though it's discussing that city, and stating facts about it. And why? Because "Loundres" $\neq$ "London"?
 
-Pierre’s is a case of double vision: where two apparently distinct objects are in fact one.
+4. Pierre **does not believe** that London is pretty and **does not believe** that London is not pretty.
+This has the same problem that (2) has.
 
-Quine’s solution: Give up the idea of belief as a relation to object and propositions. Rather, belief is merely a relation to sentences. So it’s not a question of “does Pierre believe London is pretty?” It’s a question of “does Pierre believe ‘London is pretty’?”
+There's much more discussion one could have about this puzzle and these permutations. Perhaps you can find a good solution.
+
+### [Quantifiers and Propositional Attitudes](https://www.uvm.edu/~lderosse/courses/lang/Quine(1956).pdf) ([W. V. O. Quine](https://plato.stanford.edu/entries/quine/))
+
+Pierre’s is a case of **double vision**, where two apparently distinct objects are in fact one. Quine’s solution is to give up the idea of belief as a relation to objects and propositions. Rather, belief is merely a relation to sentences. So it’s not a question of “does Pierre believe London is pretty?” It’s a question of “does Pierre believe ‘London is pretty’?”
+
+This idea is pretty radical. It provides a simple solution to Pierre's case, but its implication about belief in general is very odd. When I believe something, if feels like I believe that thing directly, not that I believe it because I would assent to a statement that that belief is true.
 
 ## Context Sensitivity
 
-### Demonstratives (David Kaplan)
+### [Demonstratives](https://www.asc.ohio-state.edu/roberts.21/NYU/Kaplan.demonstratives.pdf) ([David Kaplan](https://en.wikipedia.org/wiki/David_Kaplan_(philosopher)))
 
 Indexicals and demonstratives are terms whose referent is determined by the context of utterance, and whose meaning provides a rule that determines the referent based on certain aspects of the context.
 
 **Indexicals** get their referent from the context, (i.e. I, you, today, tomorrow, here). **Demonstratives** can be thought of as a subset of indexicals which tend to need an adjoining demonstration, even if not in every instance of use, (i.e. this, that, she).
 
-The **context** of use is the time and place of the speaker of the sentence. The circumstance of evaluation is the time and place within the sentence.
-“I” seems to refer to myself in the context of use, not in the circumstance of evaluation (i.e. “I was just talking to my friend in India, who was at a bar”, seems to mean something like “I was just on the phone with my friend, who was at a bar in India”, not “I was just in India talking to my friend who was at a bar” nor “I was just talking to my friend in India who was at a bar in Madison”...) The same is true for “you”...
+The *context* of use is the time and place of the speaker of the sentence. The *circumstance of evaluation* is the time and place within the sentence. “I” seems to refer to myself in the context of use, not in the circumstance of evaluation. For exmaple, “I was just talking to my friend in India, who was at a bar”, seems to mean something like “I was just on the phone with my friend, who was at a bar in India”, not “I was just in India talking to my friend who was at a bar” nor “I was just talking to my friend in India who was at a bar in Madison”. The same is true for “you”...
 
-**Content** is what is expressed by an expression in a context of use. Both individual expressions and sentences have contents. The content of an indexical is just it’s referent (because given a context, indexicals are directly referential). But that content will vary from context to context in a consistent way. For example, the character of “I” is “the speaker in the context of utterance”, but within a context, the content is just some individual. Likewise, the character of “today” is “the day of the context of utterance”
+*Content* is what is expressed by an expression in a context of use. Both individual expressions and sentences have contents. The content of an indexical is just it’s referent, because given a context, indexicals are directly referential. But that content will vary from context to context in a consistent way. For example, the character of “I” is the speaker in the context of utterance, but within a context, the content is just some individual. Likewise, the character of “today” is the day of the context of utterance.
 
-Ex. “I am on Zoom in my bedroom”
+[NEED TO EXPLAIN CHARACTER]
 
-- Character: the speaker on Zoom in their bedroom
-- Content:  Reed is on Zoom in his bedroom
+Example: “I am at my desk writing about language”
+
+- Character: the person writing about language at their desk
+- Content:  Reed is at his desk writing about language
 - Context: the time/place
-- Circumstance: at 8:30pm, at noon, at 8:30 in another possible world…
+- Circumstance: at 6:30am, at noon, at 6:30 in another possible world...
 
-### Predicates of Taste (Peter Lasersohn)
+### [Predicates of Taste](https://www.researchgate.net/publication/214750304_Context_Dependence_Disagreement_and_Predicates_of_Personal_Taste) ([Peter Lasersohn](https://publish.illinois.edu/lasersohn/))
 
 “I am standing” has no truth value without context, but in the context of a particular person being “I” it can be said to be true or false.
 
-“Birds fly”... I’m curious about what people’s intuitions are about how you’d respond to this and what this means more precisely. Generally, I think the intuition is to say this is true...Does that implicitly say “most birds fly”? A counterexample would be “books are paperbacks”: seems false even though most books in the world are paperbacks. This might be because being specifically a paperback doesn’t seem like an especially bookish quality. We could go in the opposite direction and with “mosquitos carry the west nile virus”...
+“Birds fly”... I’m curious what people’s intuitions are about how you’d respond to this and what this means more precisely. Generally, I think the intuition is to say this is true...Does that implicitly say “most birds fly”? A counterexample would be “books are paperbacks”: seems false even though most books in the world are paperbacks. This might be because being specifically a paperback doesn’t seem like an especially bookish quality. We could go in the opposite direction and with “mosquitos carry the west nile virus”...
 
-**Predicates of taste**: expressions which are about personal taste (i.e “fun”, “tasty”, …). What do these mean? Are they truth apt?
+**Predicates of taste** are expressions which are about personal taste (i.e “fun”, “tasty”, …). What do these mean? Are they truth apt?
 
 [Here are some non exhaustive options]
 Quantificational approach problems: I can say roller coasters are fun even if I know that most people don’t like roller coasters…
-Expressivist approach problems” P1: If the pasta is tasty, I will serve it to the guests. P2: Yum. C: I will serve it to the guests. Similarly, “That was fun” “that’s true” is a legitimate conversation, but “boo” “that’s true” is not.
+
+Expressivist approach problems P1: If the pasta is tasty, I will serve it to the guests. P2: Yum. C: I will serve it to the guests. Similarly, “That was fun” “that’s true” is a legitimate conversation, but “boo” “that’s true” is not.
+
 Other approach problems: people still have disagreements about matters like this.
 
 ## Pragmatics
 
-What we’ve largely discussed so far has been semantics, which is concerned with what words mean. Pragmatics, which we’re getting into, is about how language is used.
+What we’ve mostly seen so far has been *semantics*, which is concerned with what words mean. *Pragmatics*, which we’re getting into, is about how language is used.
 
-### Performative Utterances (J. L. Austin)
+### [Performative Utterances](https://www.uvm.edu/~lderosse/courses/lang/Austin(1979).pdf) ([J. L. Austin](https://plato.stanford.edu/entries/austin-jl/))
 
-Austin apparently invented the word “performative”, which in modern colloquial use seems to be sort of the opposite of his use...
+**Performative utterances** are utterances which are themselves the action they speak of[^2]. For example, “I apologize”,  “I bet you $5 that…”, “Speed Limit: 55 mph”.
 
-**Performative utterances**: utterances which are themselves the action.
+These are not reports on the world, so they can't really be true or false, but they can be successful or unsuccessful. For example, “I do” only succeeds in marrying someone when certain social/legal conditions are met. Furthermore, certain performative utterances can only be made by people with certain authority. “I declare you husband and wife” cannot succeed in marying a couple if the speaker is not a wedding officiant.
 
-- “I apologize”,  “I bet you $5 that…”, “Speed Limit: 55 mph”
-- Not reports on the world, cannot really be true or false
-
-Performative utterances can be successful or unsuccessful: Ex. “I do” only succeeds in marrying someone when certain social/legal conditions are met.
-
-Certain performative utterances can only be made by people with certain authority. Ex. “I declare you husband and wife” only succeeds if the speaker is authorized.
 What about internal feelings? If I say “I congratulate you” but do not really feel the adjoining “admiration”, have I succeeded?
 
-### Logic and Conversation (H. P. Grice)
+### [Logic and Conversation](https://www.ucl.ac.uk/ls/studypacks/Grice-Logic.pdf) ([H. P. Grice](https://plato.stanford.edu/entries/grice/))
 
-Grice’s Rules of Conversation
-Cooperative Principle: “Make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged.”
-
-In particular, follow these four maxims:
+The **Cooperative Principle**: “Make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged.”[^3] In particular, follow these four maxims:
 
 - Quantity: Make your contribution no more or less informative than required.
 - Quality: Do not say what you believe to be false, or lack adequate evidence for.
 - Relation: Be relevant.
 - Manner: Avoid obscurity, ambiguity, excess wordiness, etc. (Be clear).
   
-There are four ways to fail:
+There are four ways to fail to satisfy the principle:
 
 - One can quietly violate them, not drawing attention to this fact
 - One can explicitly opt out (Ex. “My lips are sealed.”)
 - One can face a clash between maxims
 - One may disobey a maxim such that others are intended to be able to discern
 
-Generally we interpret other speakers as following these maxims, but even if we feel someone is violating one or several of them, we want to interpret them as still obeying the cooperative principle. This sort of disparity can lead to implicature.
+Generally we interpret other speakers as following these maxims, but even if we feel someone is violating one or several of them, we want to interpret them as still obeying the cooperative principle. This sort of disparity can lead to *implicature*.**Implicature** is something the speaker suggests or implies with an utterance, even though it’s not literally expressed.
 
-**Implicature** is something the speaker suggests or implies with an utterance, even though it’s not literally expressed.
 The speaker’s utterance only obeys the maxims if some information beyond what was literally said is communicated.
 Ex. A: “Michael doesn’t seem to have a girlfriend these days.” B: “He has been spending a lot of time at the Pi Phi house lately.”
 
@@ -169,3 +169,9 @@ Ex. A: “What state is Karl from?”  B: “A midwestern one.” (Violates quan
 
 The speaker violates a maxim with the intention of communicating some other information.
 Ex. [A reference letter] “Dear Sir, Philip’s command of English is excellent, and his attendance at work has been regular.”
+
+[^1]: From the Wikipedia page on the [Meter](https://en.wikipedia.org/wiki/Metre).
+
+[^2]: Austin apparently invented the word “performative”, though today the colloquial use seems to be sort of the opposite of his.
+
+[^3]: You have become the very thing you swore to destroy.

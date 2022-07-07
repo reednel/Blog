@@ -2,13 +2,10 @@
 title: "Topics in Language and Meaning"
 slug: "/language"
 date: 2021-04-04
-description: none
+description: This post is a crash course on the introductory topics in the Philosophy of Language and Meaning. If you're a natural language speaker, you're pretty much already an expert on these topics!
 tags:
   - Philosophy
 ---
-
-
-## Introduction
 
 This post is sort of a crash course on some of the introductory topics in the Philosophy of Language and Meaning. We will cover five big topics, which are only are loosely connected. If there exists some general theory of language and meaning which unifies all of these ideas, I know nothing of it.
 
@@ -34,24 +31,22 @@ Strawson didn’t use the term "presupposition", but he’s thought to have orig
 
 ## Proper Names
 
-A **proper name** is a name used for an individual person, place, or organization, i.e. George Washington, Venus, The Lord of the Rings. A non example would be: the first president of the United States.
-
-We call a truth **analytic** if the fact that it’s true follows from the meaning of the terms, and we call it **synthetic** if not. To use the classic example, the sentence "bachelors are unmarried men" is analytic, this is what it means to be a bachelor. The sentence "Karl is a bachelor" is synthetic. Karl could be married or unmarried, you'd have to know more about him to say. This distinction first discussed by Kant captures something similar to the *a priori*/*a posteriori* distinction, but isn't quite the same.
+A **proper name** is a name used for an individual person, place, or organization, i.e. George Washington, Venus, The Lord of the Rings. A non-example would be: the first president of the United States.
 
 Consider this argument that names have meaning beyond what they refer to:
 
 1. If the meaning of a name is *just* the thing it refers to, then two names that refer to the same thing have the same meaning.
-2. If two names that refer to the same thing have the same meaning, then whenever $a$ and $b$ are two names that refer to the same thing, $a = b$ is analytic. (We made this assumption earlier when discussing Frege).
+2. If two names that refer to the same thing have the same meaning, then whenever $a$ and $b$ are two names that refer to the same thing, $a = b$ is analytic[^1]. (We made this assumption earlier when discussing Frege).
 3. It is false that whenever $a$ and $b$ are two names that refer to the same thing, $a = b$ is analytic.
 4. Therefore, the meaning of a name is not just the thing it refers to.
 
-### [Proper Names](http://michaeljohnsonphilosophy.com/wp-content/uploads/2015/08/John-Searle-Proper-Names.pdf) ([John Searle](https://en.wikipedia.org/wiki/John_Searle))
+### [Description theory](http://michaeljohnsonphilosophy.com/wp-content/uploads/2015/08/John-Searle-Proper-Names.pdf) ([John Searle](https://en.wikipedia.org/wiki/John_Searle))
 
-Frege, [Bertrand Russell](https://plato.stanford.edu/entries/russell/), and Searle all subscribe to some form of **description theory**: that the meaning of a name is *not* just what it refers to. Rather, a name is synonymous with a description or cluster of descriptions. In Frege and Russell's case, they think there is a single property or set of properties which give a name its meaning, but Searle argues for a slightly different theory. [SHOULD SAY MORE ABOUT F&R'S IDEA...]
+Frege, [Bertrand Russell](https://plato.stanford.edu/entries/russell/), and Searle all subscribe to some form of **description theory** of proper names, which states that the meaning of a name is *not* just what it refers to. Rather, a name is synonymous with a description or cluster of descriptions. In Frege and Russell's case, they think there is a single property or set of properties which give a name its meaning, but Searle argues for a slightly different theory. [SHOULD SAY MORE ABOUT F&R'S IDEA...]
 
-Searle's problem with Frege and Russell is this: suppose “Aristotle” and “the teacher of Alexander” have the same meaning. Then that identity is analytic. But clearly it’s synthetic! It could have been that Aristotle never taught Alexander, and it seems like Aristotle would still be Aristotle. That is, there's more to our understanding of Aristotle that merely that he taught Alexander.
+Searle's problem with Frege and Russell is this: suppose “Aristotle” and “the teacher of Alexander the Great” have the same meaning. Then that identity is analytic. But surely it’s synthetic! It could have been that Aristotle never taught Alexander, and it seems like Aristotle would still be Aristotle. That is, there's more to our understanding of Aristotle that merely that he taught Alexander.
 
-The **cluster theory of proper names** states that the meaning of a name is a cluster of the properties commonly associated with it. If a thing in the world has a sufficient number of the properties associated with a name, then that thing in the world is the referent of the name.
+The **cluster theory** states that the meaning of a name is a cluster of the properties commonly associated with it. If a thing in the world has a sufficient number of the properties associated with a name, then that thing in the world is the referent of the name.
 
 We can list out some properties of Aristotle: student of Plato; teacher of Al; author of Nicomachean Ethics; author of the Prior Analytics; the greatest philosopher born in Stagira… There is no single property $P$ such that “Aristotle is $P$” is analytic, and if Aristotle didn’t have one of these properties, we wouldn’t say Aristotle didn’t exist, we’d say oh, Aristotle wasn’t born in Stagira. If it turned out that there was no such person with most of these properties, only then would say that Aristotle didn’t exist.
 
@@ -61,7 +56,7 @@ A possible response to this might be to say the name is part of the description,
 
 ### [Naming and Necessity](http://people.exeter.ac.uk/sp344/naming_and_necessityocr.pdf) ([Saul Kripke](https://en.wikipedia.org/wiki/Saul_Kripke))
 
-Kripke diverges the descriptivists, instead opting for a *theory of reference* (which is just a theory of how a term gets its referent). A motivating example for this is the Paris meter stick. Back in 1875, some scientists made a perfect meter stick out of platinum and iridium, which officially defined the meter. But despite the care they took in their choice of alloy, some atoms were still falling off or something, and the stick was very slowly getting shorter. So then in 1960 they redefined the meter as some number of wavelengths of something, and then in the 80s it was redefined again to be the distance traveled by light in a vacuum in $\frac{1}{299,792,458}$ of a second[^1]. Anyway, the idea is supposed to be that a meter is just a meter. It seems like we don’t want to change our concept just because some “official” stick is its technical definition.
+Kripke diverges the descriptivists, instead opting for a *theory of reference* (which is just a theory of how a term gets its referent). A motivating example for this is the Paris meter stick. Back in 1875, some scientists made a perfect meter stick out of platinum and iridium, which officially defined the meter. But despite the care they took in their choice of alloy, some atoms were still falling off or something, and the stick was very slowly getting shorter. So then in 1960 they redefined the meter as some number of wavelengths of something, and then in the 80s it was redefined again to be the distance traveled by light in a vacuum in $\frac{1}{299,792,458}$ of a second[^2]. Anyway, the idea is supposed to be that a meter is just a meter. It seems like we don’t want to change our concept just because some “official” stick is its technical definition.
 
 A **rigid designator** is a term or phrase that designates the same object in all possible worlds. This doesn’t mean that the term couldn’t have had a different meaning. Rather, it means that given the meaning the term has, it designates the same object with respect to all possible circumstances. Kripke argues that unlike descriptions, names are rigid designators. We can imagine a counterfactual situation in which someone else was the first president of the US, but it doesn’t really make sense to say someone else could’ve been George Washigton.
 
@@ -87,7 +82,7 @@ For this case to be correct, you have to disconnect Lundres from Pierre's childh
 4. Pierre **does not believe** that London is pretty and **does not believe** that London is not pretty.
 This has the same problem that (2) has.
 
-There's much more discussion one could have about this puzzle and these permutations. Perhaps you can find a good solution.
+There's much more discussion one could have about this puzzle and these permutations. Perhaps *you* can find a good solution.
 
 ### [Quantifiers and Propositional Attitudes](https://www.uvm.edu/~lderosse/courses/lang/Quine(1956).pdf) ([W. V. O. Quine](https://plato.stanford.edu/entries/quine/))
 
@@ -122,9 +117,11 @@ Example: “I am at my desk writing about language”
 
 “Birds fly”... I’m curious what people’s intuitions are about how you’d respond to this and what this means more precisely. Generally, I think the intuition is to say this is true...Does that implicitly say “most birds fly”? A counterexample would be “books are paperbacks”: seems false even though most books in the world are paperbacks. This might be because being specifically a paperback doesn’t seem like an especially bookish quality. We could go in the opposite direction and with “mosquitos carry the west nile virus”...
 
-**Predicates of taste** are expressions which are about personal taste (i.e “fun”, “tasty”, …). What do these mean? Are they truth apt?
+**Predicates of taste** are expressions which are about personal taste (i.e “fun”, “tasty”, ...). What do these mean? Are they truth apt?
 
 [Here are some non exhaustive options]
+
+
 Quantificational approach problems: I can say roller coasters are fun even if I know that most people don’t like roller coasters…
 
 Expressivist approach problems P1: If the pasta is tasty, I will serve it to the guests. P2: Yum. C: I will serve it to the guests. Similarly, “That was fun” “that’s true” is a legitimate conversation, but “boo” “that’s true” is not.
@@ -137,7 +134,7 @@ What we’ve mostly seen so far has been *semantics*, which is concerned with wh
 
 ### [Performative Utterances](https://www.uvm.edu/~lderosse/courses/lang/Austin(1979).pdf) ([J. L. Austin](https://plato.stanford.edu/entries/austin-jl/))
 
-**Performative utterances** are utterances which are themselves the action they speak of[^2]. For example, “I apologize”,  “I bet you $5 that…”, “Speed Limit: 55 mph”.
+**Performative utterances** are utterances which are themselves the action they speak of[^3]. For example, “I apologize”,  “I bet you $5 that…”, “Speed Limit: 55 mph”.
 
 These are not reports on the world, so they can't really be true or false, but they can be successful or unsuccessful. For example, “I do” only succeeds in marrying someone when certain social/legal conditions are met. Furthermore, certain performative utterances can only be made by people with certain authority. “I declare you husband and wife” cannot succeed in marying a couple if the speaker is not a wedding officiant.
 
@@ -145,7 +142,7 @@ What about internal feelings? If I say “I congratulate you” but do not reall
 
 ### [Logic and Conversation](https://www.ucl.ac.uk/ls/studypacks/Grice-Logic.pdf) ([H. P. Grice](https://plato.stanford.edu/entries/grice/))
 
-The **Cooperative Principle**: “Make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged.”[^3] In particular, follow these four maxims:
+The **Cooperative Principle**: “Make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged.”[^4] In particular, follow these four maxims:
 
 - Quantity: Make your contribution no more or less informative than required.
 - Quality: Do not say what you believe to be false, or lack adequate evidence for.
@@ -170,8 +167,10 @@ Ex. A: “What state is Karl from?”  B: “A midwestern one.” (Violates quan
 The speaker violates a maxim with the intention of communicating some other information.
 Ex. [A reference letter] “Dear Sir, Philip’s command of English is excellent, and his attendance at work has been regular.”
 
-[^1]: From the Wikipedia page on the [Meter](https://en.wikipedia.org/wiki/Metre).
+[^1]: We call a truth **analytic** if the fact that it’s true follows from the meaning of the terms, and we call it **synthetic** if not. To use the classic example, the sentence "bachelors are unmarried men" is analytic, this is what it means to be a bachelor. The sentence "Karl is a bachelor" is synthetic. Karl could be married or unmarried, you'd have to know more about him to say. This distinction first discussed by Kant captures something similar to the *a priori*/*a posteriori* distinction, but isn't quite the same.
 
-[^2]: Austin apparently invented the word “performative”, though today the colloquial use seems to be sort of the opposite of his.
+[^2]: From the Wikipedia page on the [Meter](https://en.wikipedia.org/wiki/Metre).
 
-[^3]: You have become the very thing you swore to destroy.
+[^3]: Austin apparently invented the word “performative”, though today the colloquial use seems to be sort of the opposite of his.
+
+[^4]: You have become the very thing you swore to destroy.

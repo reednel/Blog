@@ -19,7 +19,7 @@ A **referent** is the thing a sign refers to.
 
 For example, “Venus” and “the second planet from the sun” are two different senses which share a referent.
 
-Intuitively, the referent seems like the important part of the sense/referent pair, i.e. the one with all the meaning. If that is true, then “Venus” and “the second planet from the sun” have the same meaning. And if two statements have the same meaning, it seems like they should be completely interchangable in a sentence. Now consider this: does “Venus is Venus” have the same meaning as “Venus is the second planet from the sun”? Certainly not! The former is a tautology, but the latter tells you something about Venus that you might not have known. In this case we have two senses for the same referent, but these senses aren't merely pointers, they seem to (have the potential to) mean more than just the thing they concretely refer to.
+Intuitively, the referent seems like the important part of the sense/referent pair, i.e. the one with all the meaning. If that is true, then “Venus” and “the second planet from the sun” have the same meaning. And if two statements have the same meaning, it seems like they should be completely interchangeable in a sentence. Now consider this: does “Venus is Venus” have the same meaning as “Venus is the second planet from the sun”? Certainly not! The former is a tautology, but the latter tells you something about Venus that you might not have known. In this case we have two senses for the same referent, but these senses aren't merely pointers, they seem to (have the potential to) mean more than just the thing they concretely refer to.
 
 Question: what is the meaning of “the King of France is bald”? Frege would say that because there is no real world present king of France, the sentence has no truth value. Likewise, he will say "Harry Potter is a Wizard” is not truth-apt because as far as the real world is concerned, there is no Harry Potter who could be a wizard.
 
@@ -77,7 +77,7 @@ The glaring problem with this option is that it implies Pierre believes a contra
 If we take this to be the case, then we're ignoring Pierre's experience-based report in english that "London is not pretty", and that seems plainly wrong.
 
 3. Pierre **does not believe** that London is pretty and **believes** that London is not pretty.
-For this case to be correct, you have to disconnect Lundres from Pierre's childhood book, from London, the real city. The issue here is we're implying that the city discussed in the book does not map to the real city, even though it's discussing that city, and stating facts about it. And why? Because "Loundres" $\neq$ "London"?
+For this case to be correct, you have to disconnect Londres from Pierre's childhood book, from London, the real city. The issue here is we're implying that the city discussed in the book does not map to the real city, even though it's discussing that city, and stating facts about it. And why? Because "Londres" $\neq$ "London"?
 
 4. Pierre **does not believe** that London is pretty and **does not believe** that London is not pretty.
 This has the same problem that (2) has.
@@ -98,7 +98,7 @@ Indexicals and demonstratives are terms whose referent is determined by the cont
 
 **Indexicals** get their referent from the context, (i.e. I, you, today, tomorrow, here). **Demonstratives** can be thought of as a subset of indexicals which tend to need an adjoining demonstration, even if not in every instance of use, (i.e. this, that, she).
 
-The *context* of use is the time and place of the speaker of the sentence. The *circumstance of evaluation* is the time and place within the sentence. “I” seems to refer to myself in the context of use, not in the circumstance of evaluation. For exmaple, “I was just talking to my friend in India, who was at a bar”, seems to mean something like “I was just on the phone with my friend, who was at a bar in India”, not “I was just in India talking to my friend who was at a bar” nor “I was just talking to my friend in India who was at a bar in Madison”. The same is true for “you”...
+The *context* of use is the time and place of the speaker of the sentence. The *circumstance of evaluation* is the time and place within the sentence. “I” seems to refer to myself in the context of use, not in the circumstance of evaluation. For examaple, “I was just talking to my friend in India, who was at a bar”, seems to mean something like “I was just on the phone with my friend, who was at a bar in India”, not “I was just in India talking to my friend who was at a bar” nor “I was just talking to my friend in India who was at a bar in Madison”. The same is true for “you”...
 
 *Content* is what is expressed by an expression in a context of use. Both individual expressions and sentences have contents. The content of an indexical is just it’s referent, because given a context, indexicals are directly referential. But that content will vary from context to context in a consistent way. For example, the character of “I” is the speaker in the context of utterance, but within a context, the content is just some individual. Likewise, the character of “today” is the day of the context of utterance.
 
@@ -115,7 +115,7 @@ Example: “I am at my desk writing about language”
 
 “I am standing” has no truth value without context, but in the context of a particular person being “I” it can be said to be true or false.
 
-“Birds fly”... I’m curious what people’s intuitions are about how you’d respond to this and what this means more precisely. Generally, I think the intuition is to say this is true...Does that implicitly say “most birds fly”? A counterexample would be “books are paperbacks”: seems false even though most books in the world are paperbacks. This might be because being specifically a paperback doesn’t seem like an especially bookish quality. We could go in the opposite direction and with “mosquitos carry the west nile virus”...
+“Birds fly”... I’m curious what people’s intuitions are about how you’d respond to this and what this means more precisely. Generally, I think the intuition is to say this is true...Does that implicitly say “most birds fly”? A counterexample would be “books are paperbacks”: seems false even though most books in the world are paperbacks. This might be because being specifically a paperback doesn’t seem like an especially bookish quality. We could go in the opposite direction and with “mosquitos carry the West Nile virus”...
 
 **Predicates of taste** are expressions which are about personal taste (i.e “fun”, “tasty”, ...). What do these mean? Are they truth apt?
 
@@ -136,7 +136,7 @@ What we’ve mostly seen so far has been *semantics*, which is concerned with wh
 
 **Performative utterances** are utterances which are themselves the action they speak of[^3]. For example, “I apologize”,  “I bet you $5 that…”, “Speed Limit: 55 mph”.
 
-These are not reports on the world, so they can't really be true or false, but they can be successful or unsuccessful. For example, “I do” only succeeds in marrying someone when certain social/legal conditions are met. Furthermore, certain performative utterances can only be made by people with certain authority. “I declare you husband and wife” cannot succeed in marying a couple if the speaker is not a wedding officiant.
+These are not reports on the world, so they can't really be true or false, but they can be successful or unsuccessful. For example, “I do” only succeeds in marrying someone when certain social/legal conditions are met. Furthermore, certain performative utterances can only be made by people with certain authority. “I declare you husband and wife” cannot succeed in marrying a couple if the speaker is not a wedding officiant.
 
 What about internal feelings? If I say “I congratulate you” but do not really feel the adjoining “admiration”, have I succeeded?
 

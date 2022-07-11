@@ -44,7 +44,7 @@ RSA is a public key ciphersystem, which means that everyone can know how to encr
 
 RSA leverages this fact to create its one-way functions: it is relatively easy to compute very large prime numbers, but very difficult to find the prime factors of large numbers.
 
-Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ in $\mathbb{Z}_{(p-1)(q-1)}$, such that $e \cdot d \equiv 1 \,(\text{mod } 26)$. That is, $e$ and $d$ are inverses in $\mathbb{Z}_{(p-1)(q-1)}$. At this point we can throw out everything but $e$, $d$, and $n$. we no longer need them and their dicovery would break the security of our scheme. Now we can share $(e, n)$ publicly, and must keep $d$ secret. The encryption for a message $M$ is $M^e \,(\text{mod } n)$, and the decryption is $(M^e)^d \,(\text{mod } n)$. It's as simple as that.
+Let $p$ and $q$ be two large primes, and $n = p \cdot q$. Then take $e$ and $d$ in $\mathbb{Z}_{(p-1)(q-1)}$, such that $e \cdot d \equiv 1 \,(\text{mod } 26)$. That is, $e$ and $d$ are inverses in $\mathbb{Z}_{(p-1)(q-1)}$. At this point we can throw out everything but $e$, $d$, and $n$. we no longer need them and their discovery would break the security of our scheme. Now we can share $(e, n)$ publicly, and must keep $d$ secret. The encryption for a message $M$ is $M^e \,(\text{mod } n)$, and the decryption is $(M^e)^d \,(\text{mod } n)$. It's as simple as that.
 
 It's not obvious at all that $M^{e \cdot d} \equiv M \,(\text{mod } p \cdot q)$ when $e \cdot d \equiv 1 \,(\text{mod } (p-1)(q-1))$, but this fact is essential for RSA to work as it does. I'll prove this statement below in case you're interested.
 
@@ -52,7 +52,7 @@ I've already mentioned that RSA is widely used today, but in particular many RSA
 
 First, isn't it difficult to find prime numbers that large to use for $p$ and $q$?
 
-Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are apporximately $\frac{n}{\ln(n)}$ primes in the first $n$ natural numbers. So in pratice, it's reasonable to iteratively take numbers in some ballpark and do a [primality test](https://en.wikipedia.org/wiki/Primality_test). Naively, all you'd have to do is check if any prime between $2$ and $\sqrt{n}$ divides $n$. So clearly this can be done much faster than finding the prime factors in general (which we said earlier was hard).
+Prime numbers aren't as scarce for $n$ in our ballpark as you may think. By the [Prime Number Theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), there are approximately $\frac{n}{\ln(n)}$ primes in the first $n$ natural numbers. So in pratice, it's reasonable to iteratively take numbers in some ballpark and do a [primality test](https://en.wikipedia.org/wiki/Primality_test). Naively, all you'd have to do is check if any prime between $2$ and $\sqrt{n}$ divides $n$. So clearly this can be done much faster than finding the prime factors in general (which we said earlier was hard).
 
 Second, isn't it difficult to reduce such huge exponents to encrypt and decrypt messages?
 

@@ -2,10 +2,11 @@
 title: "Data Compression"
 slug: "/compression"
 date: 2022-06-30
-description: Data compression is a process of modifying the representation of some information so that it can be stored using less data. We discuss *entropy*: how information is quantified, and *Huffman Coding*: a simple, speedy, and greedy compression algorithm.
+description: Data compression is a process of modifying the representation of some information so that it can be stored using less data. We discuss how information is quantified (entropy), and a simple, speedy, and greedy compression algorithm (the Huffman Coding).
 tags:
   - Cryptography
 ---
+
 
 ## Overview
 
@@ -23,7 +24,7 @@ Formally, the **entropy** of $P$ is given by $H(P) = - \sum\limits_{i \in \Omega
 
 Fact: $0 \leq H(P) \leq \log(|\Omega|) = H(P_{uniform})$.
 
-#### Applying Entropy
+### Applying Entropy
 
 Remarkably, a choice from $\Omega$ contains $H$ bits of information per element.
 
@@ -47,7 +48,7 @@ There is a theorem that states that there exists an optimal prefix code $C$, suc
 
 In the 50's, MIT PhD student David Huffman had to write a paper proving some coding was optimal. He couldn't figure it out, but extraodinarily, he thought up his own algorithm[^3] and proved that coding was optimal. Huffman's professor [Robert Fano](https://en.wikipedia.org/wiki/Robert_Fano) had previously devised a coding algorithm with[^4] Claude Shannon himself, so when his *student* showed him a better algorithm, Fano supposedly[^5] canceled class for the rest of the term. In essence, this is the Huffman Coding:
 
-1. Start with the system $\Omega = x_1, x_2,..., x_n$, and $p = $ the probability function.
+1. Start with the system $\Omega = x_1, x_2,..., x_n$, and $p =$ the probability function.
 
 2. Take $x_i, x_j$ of lowest probability in $\Omega$.
 
@@ -57,7 +58,7 @@ In the 50's, MIT PhD student David Huffman had to write a paper proving some cod
 
 5. Build a binary tree for which all the leaves are the original members of $\Omega$, and two nodes share a parent if they were replaced by that parent in step (2).
 
-[Visualization of the Huffman Coding algorithm](huffman.jpg)
+![Visualization of the Huffman Coding algorithm](huffman.png)
 
 Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol coding. There are alternate methods of coding which perform better under certain circumstances, but even where suboptimal, Huffman is quite good.
 

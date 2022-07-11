@@ -29,7 +29,7 @@ Let $A$ be an alphabet of $k$ distinct characters[^2]. A **de Bruijn sequence** 
 
 Each $B(k, n)$ has a corresponding de Bruijn graph. The example in the figure below shows the graph for $B(2, 3)$.
 
-![$B(2,3)$ Graph](./b23_graph.png)
+![B(2, 3) Graph](./b23_graph.png)
 
 **De Bruijn graphs** are directed Eulerian graphs, which is to say that there exists a circuit within the graph which visits each edge exactly once. These graphs have a number of interrelated properties.
 
@@ -41,7 +41,7 @@ Each $B(k, n)$ has a corresponding de Bruijn graph. The example in the figure be
 
 **Property 6:** Because each vertex has exactly $k$ incoming and outgoing edges, the number of edges of $B(k, n)$ are $k\cdot k^{n-1}$, or $k^n$. Notice that $B(k, n+1)$ has a number of vertices equal to the number of edges of $B(k, n)$. We can draw the graph for $B(k, n+1)$ in the following way: put a vertex where each edge of $B(k, n)$ would be, whose label is the character on that edge, concatenated to the source vertex. In this way, each vertex remains unique with respect to all other vertices in the $B(k, n+1)$ graph. Applying this method to the $B(2, 3)$ graph pictured above yields the $B(2, 4)$ graph pictured in the figure below.
 
-![$B(2,4)$ Graph](b24_graph.png)
+![B(2, 4) Graph](./b24_graph.png)
 
 **Property 7:** By following an Eulerian circuit through a $B(k, n-1)$ graph, and recording the label of each edge as it is visited, one gets a $B(k, n)$ sequence. Furthermore, the set of sequences constructed by taking all Eulerian circuits in the $B(k,n-1)$ graph is identical to the set of $B(k, n)$ sequences. This fact is key in creating a generating algorithm.
 
@@ -59,7 +59,7 @@ The $B(k, n)$ graph will be represented by an adjacency matrix[^4]. The data str
 
 Each vertex (a value in base-k) corresponds to the index of that value in decimal. Then whether one vertex points to another (or the same) depends on if the rightmost $n-1$ characters of the row index are the same as the leftmost $n-1$ characters of the column index (in the spirit of the example described under Property 5). The adjacency matrix corresponding to the $B(2, 3)$ graph is pictured in the figure below, and can be verified by examining the first figure.
 
-![$B(2,3)$ Adjacency Matrix](b23_adjmatrix.png)
+![B(2, 3) Adjacency Matrix](./b23_adjmatrix.png)
 
 ### Traversing the Graph
 
@@ -72,7 +72,7 @@ This algorithm terminates when all paths in the graph have been traversed. Imple
 
 ### Additional Notes
 
-In practice, this algorithm ’s biggest bottleneck is neither time nor space complexity (in runtime). The problem is about the volume of data output. These sequences grow in number and length extraordinarily fast (recall Properties 2.1 and 2.2). At 1 byte/character, a file containing all $B(2,6)$ sequences would be 4 GB in size. A file containing all $B(2,7)$ sequences would be 65,000,000,000 GB. Changing the alphabet makes for even more radical growth. A single $B(10,10)$ sequence would be 10 GB.
+In practice, this algorithm’s biggest bottleneck is neither time nor space complexity (in runtime). The problem is about the volume of data output. These sequences grow in number and length extraordinarily fast (recall Properties 2.1 and 2.2). At 1 byte/character, a file containing all $B(2,6)$ sequences would be 4 GB in size. A file containing all $B(2,7)$ sequences would be 65,000,000,000 GB. Changing the alphabet makes for even more radical growth. A single $B(10,10)$ sequence would be 10 GB.
 
 ## Shuffling Binary Sequences
 
@@ -104,7 +104,7 @@ $\underline{01234}56789 \to \underline{0}5\underline{1}6\underline{2}7\underline
 
 Below are some results from a function which checks each rotation of each sequence provided by the generator, and returns those which out-shuffle.
 
-![Sample out-shuffling de Bruijn sequences](b_outshuffles.png)
+![Sample out-shuffling de Bruijn sequences](./b_outshuffles.png)
 
 ## Applications
 

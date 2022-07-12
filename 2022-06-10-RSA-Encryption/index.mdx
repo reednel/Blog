@@ -8,8 +8,6 @@ tags:
 ---
 
 
-## Overview
-
 Encryption is all about encoding information with the end of limiting (meaningful) access to it. Usually when we're talking about encryption/decryption, it's in the context of an outgoing/incoming message. You use encryption dozens or hundreds of times a day without ever having to think about it. Every credit card swipe, every iMessage, every HTTPS visit, and every packet sent to your wireless headphones is encrypted. Anyone intercepting your data while it's in motion is only reading garbage (so long as they can't decrypt it).
 
 RSA is an encryption algorithm developed at MIT in the 70's[^1] by researchers Rivest, Shamir, and Adleman (hence, RSA). It's simple enough to understand, but it's very secure. Despite its age, RSA remains one of the most widely used public-key encryption schemes. "Public-key" isn't some throwaway phrase, it's integral to the description of RSA, and it describes a very significant class of ciphersystems in Cryptography. To build context for this concept and for RSA, we'll first look at a more traditional class of systems.
@@ -76,9 +74,6 @@ By symmetry, $(x^e)^d \equiv x \,(\text{mod } q)$.$\\$
 So we have $\forall x \in \mathbb{Z}_n, x^{ed} \equiv x \,(\text{mod } pq)$.
 
 [^1]: An equivalent system was developed secretly and used by the British government years before Rivest, Shamir, and Adleman devised RSA!
-
 [^2]: The existence of one-way functions is actually only a conjecture! To prove OWFs exist is to prove $P \neq NP$. That is to say, RSA's security depends on a very big (but probably safe) assumption.
-
 [^3]: [Numberphile](https://www.youtube.com/c/numberphile) has several RSA-related videos. [This one](https://youtu.be/cbGB__V8MNk) explains why $2^{16}+1$ is a pretty good choice of $e$.
-
 [^4]: The second coolest theorem with a name of the form "Fermat's L___ Theorem".

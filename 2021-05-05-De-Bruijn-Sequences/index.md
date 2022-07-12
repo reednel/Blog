@@ -120,18 +120,11 @@ De Bruijn sequences and graphs have many interesting and not-too-complicated pro
 
 I wrote a Java implementation of the generating algorithm and shuffles described above, along with a suite of other tools pertaining to de Bruijn sequences and graphs. This code and select output files from the generating function can be found [here](github.com/reednel/DeBruijn).
 
-[^1]: [A combinatorial Problem](https://pure.tue.nl/ws/files/4442708/597473.pdf) (1946), Nicolaas Govert de Bruijn.
-
+[^1]: Nicolaas Govert de Bruijn, *[A combinatorial Problem](https://pure.tue.nl/ws/files/4442708/597473.pdf)* (1946).
 [^2]: A binary alphabet is often implied with de Bruijn sequences, but most of what this paper discusses is applicable to an arbitrary alphabet.
-
 [^3]: The nominal values of the characters used in the alphabet are unimportant, so for this paper and generally, when $k < 10$, we take $A = \{ 0, 1, \dots, k \}$.
-
 [^4]: An **adjacency matrix** is a boolean-valued $n$ by $n$ matrix where the indices of the rows and columns correspond to the vertices $1, \dots, n$ in the graph, and the truth-value at a coordinate $(i, j)$ depends on the existence of an edge from vertex $i$ to vertex $j$.
-
 [^5]: Concerning playing cards, a perfect shuffle (in or out) corresponds to a perfect [Faro shuffle](https://en.wikipedia.org/wiki/Faro_shuffle). In practice, it would take much skill to reliably execute the Faro shuffle perfectly.
-
 [^6]: It would be interesting to prove that for all n, there exists a $B(2, n)$ sequence that shuffles.
-
 [^7]: See *A novel codon-based de Bruijn graph algorithm for gene construction from unassembled transcriptomes* (2016). Available [here](https://www.researchgate.net/publication/310461341_A_novel_codon-based_de_Bruijn_graph_algorithm_for_gene_construction_from_unassembled_transcriptomes).
-
 [^8]: A **self working** trick refers to one which follows a fixed procedure that does not depend on circumstance or skill.

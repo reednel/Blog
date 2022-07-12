@@ -8,8 +8,6 @@ tags:
 ---
 
 
-## Overview
-
 **Data compression** is a process of modifying the representation of some information so that it can be stored using less data. Storing and transmitting data is expensive in large quantities, making an optimal compression (one which minimizes storage size) extremely valuable. In this post we will learn how to quantify data information-theoretically[^1], and how to get an optimal compression with optimal speed.
 
 The ratio of concepts and definitions to prose is pretty high in this post, but I try to ameliorate that with examples and alternate descriptions. Assuming a bit of familiarity with binary and ASCII, nothing here should be too dificult to understand. It's okay to skim over some of the equations, there won't be a test at the end.
@@ -62,12 +60,9 @@ In the 50's, MIT PhD student David Huffman had to write a paper proving some cod
 
 Huffman's simple $O(n\log(n))$ algorithm finds an optimal symbol-by-symbol coding. There are alternate methods of coding which perform better under certain circumstances, but even where suboptimal, Huffman is quite good.
 
+
 [^1]: Claude Shannon is the father of [Information Theory](https://en.wikipedia.org/wiki/Information_theory), and an absolute legend. He wrote the book *A Mathematical Theory of Communication*, which a professor of mine once described as "one of the most important books in science in the last century".
-
 [^2]: This statistic is from the Wikipedia page on [Letter Frequency](https://en.wikipedia.org/wiki/Letter_frequency).
-
-[^3]: David Huffman, [A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)
-
+[^3]: David Huffman, *[A Method for the Construction of Minimum-Redundancy Codes](https://github.com/pipul/lab/blob/master/papers/Others/huffman_1952_minimum-redundancy-codes.pdf)* (1952).
 [^4]: Fano and Shannon didn't actually collaborate, rather they independently developed similar algorithms at almost the exact same time. Today these are clumped together as the [Shannon-Fano Coding](https://en.wikipedia.org/wiki/Shannon%E2%80%93Fano_coding).
-
 [^5]: I've only heard this part from one source.

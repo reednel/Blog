@@ -8,8 +8,6 @@ tags:
 ---
 
 
-## Overview
-
 - What is the Diffie Hellman Key Exchange?
 - what else will we talk about?
 

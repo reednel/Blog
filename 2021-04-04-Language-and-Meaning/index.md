@@ -168,9 +168,6 @@ The speaker violates a maxim with the intention of communicating some other info
 Ex. [A reference letter] “Dear Sir, Philip’s command of English is excellent, and his attendance at work has been regular.”
 
 [^1]: We call a truth **analytic** if the fact that it’s true follows from the meaning of the terms, and we call it **synthetic** if not. To use the classic example, the sentence "bachelors are unmarried men" is analytic, this is what it means to be a bachelor. The sentence "Karl is a bachelor" is synthetic. Karl could be married or unmarried, you'd have to know more about him to say. This distinction first discussed by Kant captures something similar to the *a priori*/*a posteriori* distinction, but isn't quite the same.
-
 [^2]: From the Wikipedia page on the [Meter](https://en.wikipedia.org/wiki/Metre).
-
 [^3]: Austin apparently invented the word “performative”, though today the colloquial use seems to be sort of the opposite of his.
-
 [^4]: You have become the very thing you swore to destroy.

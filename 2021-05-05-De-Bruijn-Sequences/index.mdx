@@ -13,11 +13,7 @@ We will begin by exploring some of the interesting combinatorial and graph theor
 
 ## Properties
 
-### Definition and Notation
-
 Let $A$ be an alphabet of $k$ distinct characters[^2]. A **de Bruijn sequence** is a cyclic string of characters from $A$ where each permutation of $n$ characters appears exactly once. $B(k, n)$ will be used to denote the set of de Bruijn sequences of window length $n$ and alphabet length $k$.
-
-### Basic Properties
 
 **Property 1:** The length of a $B(k, n)$ sequence is $k^n$.
 
@@ -78,7 +74,7 @@ In practice, this algorithm’s biggest bottleneck is neither time nor space com
 
 ### Shuffling
 
-Let's turn our attention to special binary de Bruijn sequences which have the property that, after undergoing a perfect shuffle, they retain their original order. For brevity, we will say a binary de Bruijn sequence **shuffles** if and only if it has this property. In this section, a perfect shuffle[^5] refers to a perfect *in-shuffle* or a perfect *out-shuffle*. Let's see how these are performed.
+My original motivation for exploring de Bruijn sequences was related to card magic, so to that end, let's examine binary de Bruijn sequences which have the property that, after undergoing a *perfect shuffle*, retain their original order. For brevity, we will say a binary de Bruijn sequence **shuffles** if and only if it has this property. In this section, a perfect shuffle[^5] refers to a perfect *in-shuffle* or a perfect *out-shuffle*. Let's see how these are performed.
 
 Let $n$ be the length of a sequence, and $i$ denote the index of each element in the sequence, for $0\leq i\leq n-1$.
 
@@ -98,13 +94,15 @@ $\underline{01234}56789 \to \underline{0}5\underline{1}6\underline{2}7\underline
 
 ### Properties
 
-**Property 9:** For a given $n$, it’s not true that all $B(2, n)$ sequences shuffle.[^6]
+**Property 9:** For arbitrary $n$, not all $B(2, n)$ sequences shuffle.[^6]
 
 **Property 10:** Of sequences that shuffle, only certain rotations do.
 
 Below are some results from a function which checks each rotation of each sequence provided by the generator, and returns those which out-shuffle.
 
 ![Sample out-shuffling de Bruijn sequences](./b_outshuffles.png)
+
+There would be a number of interesting directions to take this shuffling idea. The naive method for checking if a sequence can shuffle to itself would be $O(n^2)$ with respect to the length of the sequence: for each of $n$ rotations, you compare the character at each index of the original sequence to the character at each index of the transformed sequence. I wonder if it's possible to tell whether some rotation of a sequnce will shuffle, just by examining a single rotation. One might also be able to take this in an algebraic direction: perhaps the right sets of sequences shuffle to each other, forming a [group](https://en.wikipedia.org/wiki/Group_theory) under shuffling operation.
 
 ## Applications
 
@@ -113,6 +111,8 @@ De Bruijn sequences have applications in a diverse set of areas. Most notable am
 Another interesting application is in (especially self working[^8]) card magic. For example, one might leverage the binary color options to order the deck in a $B(2, n)$ de Bruijn sequence. The spectator then draws n consecutive cards and recites their colors, on order. With this information and a bit of memorization ahead of time, the performer is able to identify exactly where in the sequence the spectator drew from, and thus what the values of their cards are. A strength of this trick is that one can cut the deck *ad infinitum* without ever breaking the sequence. I think it would be possible to strengthen this type of trick by leveraging properties of certain sequences that shuffle. I can see only two obstacles here: First, sequences that shuffle are relatievely rare, and there are further constraints given a standard deck's color/suit/value system, and the size of the sequence. Second, executing a perfect shuffle is just a difficult thing to do. But these challenges are very surmountable.
 
 As far as other applications, de Bruijn sequences have been used in fMRI research, bit operations in Computer Science, and even in cracking PIN locks which accept rolling input. There are others, but none appear to be too grand or significant. The diversity of applications is perhaps more notable than the applications themselves.
+
+I have wondered about the possibility of a cryptographic application, but my intuition says this path is fruitless. In short, it's usually very valuable to have a large space of posible values, both to use as keys and to encode data, so I would be skeptical that any benefit de Bruijn sequences might bring would outweigh the cost of a greatly reduced possibility space.
 
 ## Closing Thoughts
 
